@@ -1,0 +1,11 @@
+# Analytical environment used for this run: CPython 3.14
+# Direct dependencies used through Phase 2.5 and BQ2.
+scikit-learn
+openpyxl
+pandas
+scipy
+statsmodels
+streamlit
+plotly
+matplotlib
+
