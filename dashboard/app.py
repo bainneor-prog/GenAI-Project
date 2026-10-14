@@ -66,7 +66,24 @@ def evidence(relative, show_warning=True):
 def show_distribution(frame):
     fig = crop_yield_boxplot(frame)
     if fig is not None: st.plotly_chart(fig, width="stretch")
-    else: st.bar_chart(frame.groupby("Crop_Type")["Crop_Yield_ton_per_hectare"].mean())
+    else: safe_bar(frame.groupby("Crop_Type")["Crop_Yield_ton_per_hectare"].mean(), "Recorded yield value")
+
+def safe_bar(series, value_label="Value"):
+    """Render a bar chart without Streamlit's Altair-dependent st.bar_chart path."""
+    clean = series.rename(value_label).reset_index()
+    try:
+        import plotly.express as px
+        category = clean.columns[0]
+        fig = px.bar(clean, x=category, y=value_label, text=value_label)
+        fig.update_traces(texttemplate="%{text:.2f}", textposition="outside")
+        fig.update_layout(showlegend=False, margin=dict(t=20, l=10, r=10, b=40))
+        st.plotly_chart(fig, width="stretch")
+    except Exception:
+        st.dataframe(clean, hide_index=True, width="stretch")
+
+def category_options(series):
+    """Return stable string-labelled options when hosted CSV parsers mix types."""
+    return sorted({str(v) for v in series.dropna().tolist()})
 
 def analysis_context(ids):
     selected = register[register.analysis_id.isin(ids)]
@@ -178,7 +195,8 @@ elif page == "Crop Performance":
     analysis_context(["A002"])
     st.markdown('<div class="section-card">Use the controls to compare crop populations. These are descriptive summaries of the selected records, not recommendations.</div>', unsafe_allow_html=True)
     summary = data.groupby("Crop_Type")["Crop_Yield_ton_per_hectare"].agg(count="size", mean="mean", median="median", sd="std").reset_index().sort_values("mean", ascending=False)
-    choice = st.multiselect("Compare crops", sorted(data.Crop_Type.unique()), default=sorted(data.Crop_Type.unique()))
+    crop_options = category_options(data["Crop_Type"])
+    choice = st.multiselect("Compare crops", crop_options, default=crop_options)
     selected = data[data.Crop_Type.isin(choice)]
     if selected.empty: st.warning("Select at least one crop.")
     else:
@@ -230,7 +248,7 @@ elif page == "Yield Relationships":
         import plotly.express as px
         st.plotly_chart(px.box(data, x="Irrigation_Type", y="Crop_Yield_ton_per_hectare", color="Irrigation_Type", points=False, title="Recorded yield distributions by irrigation category"), width="stretch")
     except ModuleNotFoundError:
-        st.bar_chart(irrigation.set_index("Irrigation_Type")["mean"])
+        safe_bar(irrigation.set_index("Irrigation_Type")["mean"], "Mean recorded yield")
     with st.expander("Supporting statistical evidence"): st.dataframe(evidence("results/baseline_details/A010_A015_irrigation_anova.csv", show_warning=False), hide_index=True)
 elif page == "Prediction Accuracy":
     st.title("Prediction accuracy")
@@ -248,19 +266,21 @@ elif page == "Prediction Accuracy":
         global_row = metrics[(metrics.Analysis_ID == "A056") & metrics.holdout_RMSE.notna()]
         if not global_row.empty: st.metric("Global mean context", f"RMSE {global_row.iloc[0].holdout_RMSE:.2f}")
     except ModuleNotFoundError:
-        if not primary.empty: st.bar_chart(primary.set_index("model")["holdout_RMSE"])
+        if not primary.empty: safe_bar(primary.set_index("model")["holdout_RMSE"], "Holdout RMSE")
     with st.expander("Primary metrics"): st.dataframe(primary, hide_index=True)
     st.write("Primary fixed configuration: gradient boosting ranked first. Independent five-seed evaluation: linear regression ranked first on average.")
     with st.expander("Independent evaluation"): st.dataframe(evidence("audit/Phase8_Independent_Replication/PHASE8_RESULTS.csv"), hide_index=True)
     importance = metrics[(metrics.Analysis_ID == "A060") & metrics.importance_mean.notna()]
-    if not importance.empty: st.subheader("Predictive feature contribution"); st.bar_chart(importance.set_index("feature")["importance_mean"])
+    if not importance.empty:
+        st.subheader("Predictive feature contribution")
+        safe_bar(importance.set_index("feature")["importance_mean"], "Mean importance")
     st.caption("Feature importance is predictive contribution, not causal influence.")
 elif page == "Explore the Data":
     st.title("Explore the data")
     st.caption("Exploratory filtered data — not independently audited findings.")
     selected = data.copy()
     for col in ["Crop_Type", "Soil_Type", "Region", "Irrigation_Type"]:
-        values = st.sidebar.multiselect(col.replace("_", " "), sorted(data[col].dropna().unique()))
+        values = st.sidebar.multiselect(col.replace("_", " "), category_options(data[col]))
         if values: selected = selected[selected[col].isin(values)]
     st.write(f"Rows shown: {len(selected):,} of {len(data):,}")
     if selected.empty: st.warning("No rows match the selected filters.")
@@ -293,7 +313,7 @@ elif page == "Explore the Data":
                     matrix = selected[corr_vars].corr()
                     st.plotly_chart(px.imshow(matrix, text_auto=".2f", color_continuous_scale="RdBu_r", zmin=-1, zmax=1, title="Exploratory Pearson correlation matrix"), width="stretch")
             with tab4:
-                crops = sorted(selected.Crop_Type.unique())
+                crops = category_options(selected["Crop_Type"])
                 if len(crops) < 2: st.info("Select at least two crops for drill-through comparison.")
                 else:
                     first = st.selectbox("First crop", crops, index=0); second = st.selectbox("Compare with", crops, index=1 if len(crops)>1 else 0)
