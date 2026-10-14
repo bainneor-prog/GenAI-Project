@@ -5,7 +5,8 @@ openpyxl
 pandas
 scipy
 statsmodels
-streamlit
+streamlit>=1.54.0
+pillow>=12.3.0
 plotly
 matplotlib
 
