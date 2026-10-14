@@ -1,0 +1,197 @@
+{
+  "manifest_version": 1,
+  "validation_phase": "Phase 1 - Dataset validation",
+  "validation_timestamp_utc": "2026-09-13T02:10:22.144452+00:00",
+  "source_dataset": {
+    "file_name": "Crop_Yield_original.csv",
+    "relative_path": "data/Crop_Yield_original.csv",
+    "sha256": "58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c",
+    "size_bytes": 1039971,
+    "unchanged_during_validation": true,
+    "checksum_status": "AUTHORITATIVE_PROJECT_REFERENCE_FROM_PHASE_1_ONWARD",
+    "provenance_status": "UNKNOWN / PROVENANCE NOT YET CONFIRMED",
+    "data_generation_classification": "UNKNOWN"
+  },
+  "shape": {
+    "row_count": 10000,
+    "column_count": 19
+  },
+  "column_names": [
+    "N",
+    "P",
+    "K",
+    "Soil_pH",
+    "Soil_Moisture",
+    "Soil_Type",
+    "Organic_Carbon",
+    "Temperature",
+    "Humidity",
+    "Rainfall",
+    "Sunlight_Hours",
+    "Wind_Speed",
+    "Region",
+    "Altitude",
+    "Crop_Type",
+    "Irrigation_Type",
+    "Fertilizer_Used",
+    "Pesticide_Used",
+    "Crop_Yield_ton_per_hectare"
+  ],
+  "data_types": {
+    "N": "int64",
+    "P": "int64",
+    "K": "int64",
+    "Soil_pH": "float64",
+    "Soil_Moisture": "float64",
+    "Soil_Type": "str",
+    "Organic_Carbon": "float64",
+    "Temperature": "float64",
+    "Humidity": "float64",
+    "Rainfall": "float64",
+    "Sunlight_Hours": "float64",
+    "Wind_Speed": "float64",
+    "Region": "str",
+    "Altitude": "int64",
+    "Crop_Type": "str",
+    "Irrigation_Type": "str",
+    "Fertilizer_Used": "float64",
+    "Pesticide_Used": "float64",
+    "Crop_Yield_ton_per_hectare": "float64"
+  },
+  "missing_values": {
+    "N": 0,
+    "P": 0,
+    "K": 0,
+    "Soil_pH": 0,
+    "Soil_Moisture": 0,
+    "Soil_Type": 0,
+    "Organic_Carbon": 0,
+    "Temperature": 0,
+    "Humidity": 0,
+    "Rainfall": 0,
+    "Sunlight_Hours": 0,
+    "Wind_Speed": 0,
+    "Region": 0,
+    "Altitude": 0,
+    "Crop_Type": 0,
+    "Irrigation_Type": 0,
+    "Fertilizer_Used": 0,
+    "Pesticide_Used": 0,
+    "Crop_Yield_ton_per_hectare": 0
+  },
+  "duplicate_rows": 0,
+  "invalid_or_impossible_values": {
+    "total_flagged": 0,
+    "issues_by_column": {},
+    "rules": {
+      "N": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "P": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "K": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "Soil_pH": {
+        "minimum": 0,
+        "maximum": 14
+      },
+      "Soil_Moisture": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "Organic_Carbon": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "Temperature": {
+        "minimum": -90,
+        "maximum": 60
+      },
+      "Humidity": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "Rainfall": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "Sunlight_Hours": {
+        "minimum": 0,
+        "maximum": 24
+      },
+      "Wind_Speed": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "Fertilizer_Used": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "Pesticide_Used": {
+        "minimum": 0,
+        "maximum": null
+      },
+      "Crop_Yield_ton_per_hectare": {
+        "minimum": 0,
+        "maximum": null
+      }
+    },
+    "categorical_rule": "Important categorical values must not be blank; domains are reported, not assumed."
+  },
+  "unique_values_for_important_categorical_variables": {
+    "Soil_Type": [
+      "Clay",
+      "Loamy",
+      "Sandy",
+      "Silt"
+    ],
+    "Region": [
+      "Central",
+      "East",
+      "North",
+      "South",
+      "West"
+    ],
+    "Crop_Type": [
+      "Cotton",
+      "Maize",
+      "Potato",
+      "Rice",
+      "Sugarcane",
+      "Wheat"
+    ],
+    "Irrigation_Type": [
+      "Canal",
+      "Drip",
+      "Rainfed",
+      "Sprinkler"
+    ]
+  },
+  "runtime": {
+    "python_used_for_validation": "3.12.14",
+    "required_python": "3.12.14",
+    "pandas_used_for_validation": "3.0.1",
+    "dependency_management": "pip-tools / pip-compile",
+    "direct_dependencies_file": "requirements.in",
+    "locked_dependencies_file": "requirements.txt"
+  },
+  "notes": [
+    "Validation reads the source CSV without writing to it.",
+    "The approved checksum is authoritative from Phase 1 onward; it is not retrospective proof of original provenance.",
+    "Bounds detect only obvious impossibilities and do not establish agronomic validity or recommended ranges."
+  ],
+  "baseline_consistency_check": {
+    "workbook_relative_path": "baseline/Crop Yield Dataset.xlsx",
+    "worksheet": "crop-yield Raw data",
+    "same_shape": true,
+    "same_columns_in_order": true,
+    "cell_values_match": true,
+    "interpretation": "The CSV matches the preserved baseline raw-data sheet. This supports content consistency; the workbook is not independent provenance evidence."
+  }
+}
+
