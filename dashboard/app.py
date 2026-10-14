@@ -256,7 +256,7 @@ elif page == "Prediction Accuracy":
     analysis_context(["A056","A057","A058","A059","A060","A061"])
     st.markdown("Several tested models predict accurately within this dataset. The best ranking changes with evaluation design, so no universally best model is claimed.")
     metrics = evidence("results/model_metrics.csv")
-    primary = metrics[metrics.Analysis_ID.isin(["A057", "A058", "A059", "A061"]) & metrics.holdout_RMSE.notna()].drop_duplicates("model")
+    primary = metrics[metrics.Analysis_ID.isin(["A057", "A058", "A059", "A061"]) & metrics.holdout_RMSE.notna() & (metrics.holdout_RMSE > 0)].drop_duplicates("model")
     try:
         import plotly.express as px
         if not primary.empty:
