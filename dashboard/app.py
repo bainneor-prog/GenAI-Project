@@ -4,10 +4,10 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 try:
-    from dashboard.evidence import ROOT, load_evidence, eligible_findings, load_csv
+    from dashboard.evidence import ROOT, load_evidence, eligible_findings, load_csv, load_source_dataset
     from dashboard.charts import crop_yield_boxplot
 except ModuleNotFoundError:
-    from evidence import ROOT, load_evidence, eligible_findings, load_csv
+    from evidence import ROOT, load_evidence, eligible_findings, load_csv, load_source_dataset
     from charts import crop_yield_boxplot
 try:
     from dashboard.exploration import descriptive_summary, safe_pearson, outlier_flags, numeric_columns
@@ -43,7 +43,7 @@ def get_data():
     manifest, findings, decisions, refs = load_evidence()
     register = pd.read_csv(ROOT / "results/analysis_register.csv")
     human_register = pd.read_csv(ROOT / "results/PHASE9_HUMAN_VERIFICATION_REGISTER.csv")
-    return manifest, findings, decisions, refs, register, human_register, pd.read_csv(ROOT / "data/Crop_Yield_original.csv")
+    return manifest, findings, decisions, refs, register, human_register, load_source_dataset()
 
 manifest, findings, decisions, refs, register, human_register, data = get_data()
 decisions["Finding_ID"] = decisions["Finding_ID"].astype(str).str.strip()
