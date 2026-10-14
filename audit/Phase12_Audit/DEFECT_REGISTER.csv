@@ -1,0 +1,9 @@
+Issue_ID,Severity,Description,Impact,Proposed_Correction,Status
+P12-001,MEDIUM,Original historical Phase 4 provenance unavailable,Current script and outputs are present but historical creation cannot be authenticated,Preserve provenance limitation for human acceptance,ACCEPTED_LIMITATION
+P12-002,MEDIUM,OneDrive verification virtual environment could not start,Local non-OneDrive environment now passes installation and tests,Use local verification copy for submission,RESOLVED
+P12-003,LOW,Full browser visual pass not run during this audit,Live UI regressions could remain,Human visual acceptance recorded by project owner,RESOLVED
+P12-004,LOW,Historical verbatim prompt archive unavailable,Exact AI wording cannot be independently audited,Retain reconstructed examples as educational only,ACCEPTED_LIMITATION
+P12-005,MEDIUM,Corrected lock required packaging 25.0 and pandas 2.3.3,Lock installs; pip check and 49 tests pass,Keep pins and document regeneration,RESOLVED
+P12-006,MEDIUM,Recovered Phase 4 script imports matplotlib but matplotlib is not in requirements.in or requirements.txt,Phase 4 script rerun was blocked by the incomplete lock,Add matplotlib==3.11.2 through pip-tools; isolated rerun reproduced the preserved output hash,RESOLVED
+P12-007,MEDIUM,pip-audit could not complete in the managed Windows sandbox,Dependency vulnerability status was initially unverified,Remediated Pillow and Streamlit, then completed pip-audit with exit code 0 and JSON evidence,RESOLVED
+
