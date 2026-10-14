@@ -1,0 +1,12 @@
+Evidence_ID,Artifact,Workflow,Evaluation_Dimensions,Evidence_Quality,Missing_or_Restricted,Interpretation_Restriction
+P11-E01,baseline/BAI-Assessment Felipe.docx,Traditional BI,Questions; methods; communication,Available primary artifact,Formula-level extraction not fully machine-readable,Do not infer undocumented effort or quality.
+P11-E02,baseline/Crop Yield Dataset.xlsx,Traditional BI,Data preparation; descriptive analysis; calculations,Available workbook,Independent provenance not established,Workbook is benchmark evidence not ground truth.
+P11-E03,baseline/PBI Dashboard.pbix,Traditional BI,Communication; interactivity,Available binary artifact,Content requires Power BI inspection,Do not claim measured usability improvement.
+P11-E04,results/analysis_register.csv,GenAI-assisted Python,Analysis breadth; traceability,Machine-readable,Technical statuses remain UNVERIFIED,Analysis IDs identify outputs but do not prove correctness.
+P11-E05,results/PHASE9_EVIDENCE_REFERENCE_INDEX.csv,GenAI-assisted Python,Traceability; verification,Machine-readable,External ZIP checksum historically required confirmation,References are evidence navigation not approval.
+P11-E06,audit/Claude Audit result/INDEPENDENT_AUDIT_REPORT (2).md,Independent audit,Accuracy; methods; findings,Readable advisory report,Advisory and non-blind,Audit agreement does not validate every method.
+P11-E07,audit/Phase8_Independent_Replication/PHASE8_RESULTS.csv,Blind replication,Reproducibility; predictive sensitivity,Readable independent output,A4/A5 partial,Keep primary and independent configurations separate.
+P11-E08,results/PHASE9_HUMAN_DECISION_LOG.md,Human oversight,Governance; risk; reporting,Explicit decision record,F005 deferred,Human decisions are not automatic technical verification.
+P11-E09,dashboard/app.py; dashboard/evidence.py; dashboard/exploration.py,GenAI-assisted Python,Communication; exploration; traceability,Inspectable source,No measured user study,Expert inspection is not measured usability.
+P11-E10,results/PHASE10_IMPLEMENTATION_REPORT.md,GenAI-assisted Python,Communication; dashboard scope,Documented implementation,Visual acceptance record is qualitative,Do not claim empirical stakeholder improvement.
+
