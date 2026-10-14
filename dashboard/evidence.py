@@ -1,5 +1,7 @@
 """Load approved deterministic evidence and enforce Phase 9 eligibility."""
 from pathlib import Path
+from io import BytesIO
+import base64
 import json
 import pandas as pd
 
@@ -37,6 +39,7 @@ def load_csv(relative: str) -> pd.DataFrame:
             return frame
         frame.attrs["evidence_warning"] = f"Legacy CSV parsing warning: {exc}"
         return frame
+
     except OSError as exc:
         # OneDrive may temporarily expose an offline/placeholder file. A local
         # project copy is used only as an explicitly disclosed read-only fallback.
@@ -54,4 +57,13 @@ def load_csv(relative: str) -> pd.DataFrame:
         frame = pd.DataFrame()
         frame.attrs["evidence_warning"] = f"Evidence file is currently unavailable: {exc}"
         return frame
+
+def load_source_dataset() -> pd.DataFrame:
+    """Load the canonical dataset, using authenticated transport parts on hosted copies."""
+    parts_dir = ROOT / "data" / "source_parts"
+    parts = sorted(parts_dir.glob("Crop_Yield_original.part*.b64"))
+    if parts:
+        encoded = "".join(p.read_text(encoding="ascii").strip() for p in parts)
+        return pd.read_csv(BytesIO(base64.b64decode(encoded, validate=True)))
+    return pd.read_csv(ROOT / "data" / "Crop_Yield_original.csv")
 
