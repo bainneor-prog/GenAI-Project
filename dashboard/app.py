@@ -1,5 +1,6 @@
 """Results-first Phase 10 stakeholder dashboard."""
 import re
+from urllib.parse import quote
 from pathlib import Path
 import pandas as pd
 import streamlit as st
@@ -407,7 +408,8 @@ elif page == "How We Analysed the Data":
                         st.markdown(f"**{ref.Evidence_ID} · {ref.Analysis_ID}** — {ref.Evidence_Description}")
                         st.caption(f"Location: `{path}` · Record: {ref.Exact_Record_or_Location}")
                         if exists:
-                            st.markdown(f"[Open repository file]({path})")
+                            repo_url = "https://github.com/bainneor-prog/GenAI-Project/blob/main/" + quote(path, safe="/")
+                            st.markdown(f"[Open repository file]({repo_url})")
                         else:
                             st.warning("Evidence reference unavailable")
         if selected_finding == "F005":
