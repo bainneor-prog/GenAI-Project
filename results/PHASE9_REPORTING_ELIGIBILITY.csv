@@ -1,0 +1,9 @@
+Finding_ID,Human_Decision,Eligible_For_Assessment_Report,Eligible_For_Dashboard,Required_Display_Qualification,Status
+F001,ACCEPT_WITH_QUALIFICATIONS,YES,YES,Descriptive within-dataset difference; no causal crop effect; provenance and units unknown,UNVERIFIED
+F002,ACCEPT_WITH_QUALIFICATIONS,YES,YES,Positive association only; not evidence that increasing fertiliser causes a specified improvement,UNVERIFIED
+F003,ACCEPT_WITH_QUALIFICATIONS,YES,YES,Pooled/crop-specific/within-centred statistics remain distinct; no causal interpretation,UNVERIFIED
+F004,ACCEPT_WITH_QUALIFICATIONS,YES,YES,Non-significance after corrections does not establish no irrigation effect; no management recommendation,UNVERIFIED
+F005,DEFER,NO,NO,May appear only in audit/limitations sections; Cotton coefficients withheld under D017,UNVERIFIED
+F006,ACCEPT_WITH_QUALIFICATIONS,YES,YES,Strong within-dataset performance; rankings depend on design/configuration; no universal best or real-world generalisation,UNVERIFIED
+F007,ACCEPT_WITH_QUALIFICATIONS,YES,YES,Random Forest predictive importance is not causal influence,UNVERIFIED
+
