@@ -1,0 +1,256 @@
+{
+  "sha256": "58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c",
+  "bytes": 1039971,
+  "shape": [
+    10000,
+    19
+  ],
+  "columns": [
+    "N",
+    "P",
+    "K",
+    "Soil_pH",
+    "Soil_Moisture",
+    "Soil_Type",
+    "Organic_Carbon",
+    "Temperature",
+    "Humidity",
+    "Rainfall",
+    "Sunlight_Hours",
+    "Wind_Speed",
+    "Region",
+    "Altitude",
+    "Crop_Type",
+    "Irrigation_Type",
+    "Fertilizer_Used",
+    "Pesticide_Used",
+    "Crop_Yield_ton_per_hectare"
+  ],
+  "numeric_columns": [
+    "N",
+    "P",
+    "K",
+    "Soil_pH",
+    "Soil_Moisture",
+    "Organic_Carbon",
+    "Temperature",
+    "Humidity",
+    "Rainfall",
+    "Sunlight_Hours",
+    "Wind_Speed",
+    "Altitude",
+    "Fertilizer_Used",
+    "Pesticide_Used",
+    "Crop_Yield_ton_per_hectare"
+  ],
+  "categorical_columns": [
+    "Soil_Type",
+    "Region",
+    "Crop_Type",
+    "Irrigation_Type"
+  ],
+  "observed_numeric_ranges": {
+    "N": {
+      "min": 30.0,
+      "max": 179.0
+    },
+    "P": {
+      "min": 15.0,
+      "max": 99.0
+    },
+    "K": {
+      "min": 20.0,
+      "max": 149.0
+    },
+    "Soil_pH": {
+      "min": 4.8,
+      "max": 8.2
+    },
+    "Soil_Moisture": {
+      "min": 15.0,
+      "max": 64.99
+    },
+    "Organic_Carbon": {
+      "min": 0.3,
+      "max": 1.6
+    },
+    "Temperature": {
+      "min": 10.0,
+      "max": 40.0
+    },
+    "Humidity": {
+      "min": 30.01,
+      "max": 89.99
+    },
+    "Rainfall": {
+      "min": 300.7,
+      "max": 2799.26
+    },
+    "Sunlight_Hours": {
+      "min": 4.0,
+      "max": 11.0
+    },
+    "Wind_Speed": {
+      "min": 1.0,
+      "max": 18.0
+    },
+    "Altitude": {
+      "min": 0.0,
+      "max": 2199.0
+    },
+    "Fertilizer_Used": {
+      "min": 60.0,
+      "max": 349.96
+    },
+    "Pesticide_Used": {
+      "min": 0.0,
+      "max": 25.0
+    },
+    "Crop_Yield_ton_per_hectare": {
+      "min": 1.76,
+      "max": 80.99
+    }
+  },
+  "bound_or_blank_violations": {
+    "N": 0,
+    "P": 0,
+    "K": 0,
+    "Soil_pH": 0,
+    "Soil_Moisture": 0,
+    "Organic_Carbon": 0,
+    "Temperature": 0,
+    "Humidity": 0,
+    "Rainfall": 0,
+    "Sunlight_Hours": 0,
+    "Wind_Speed": 0,
+    "Altitude": 0,
+    "Fertilizer_Used": 0,
+    "Pesticide_Used": 0,
+    "Crop_Yield_ton_per_hectare": 0,
+    "Soil_Type": 0,
+    "Region": 0,
+    "Crop_Type": 0,
+    "Irrigation_Type": 0
+  },
+  "missing_by_column": {
+    "N": 0,
+    "P": 0,
+    "K": 0,
+    "Soil_pH": 0,
+    "Soil_Moisture": 0,
+    "Soil_Type": 0,
+    "Organic_Carbon": 0,
+    "Temperature": 0,
+    "Humidity": 0,
+    "Rainfall": 0,
+    "Sunlight_Hours": 0,
+    "Wind_Speed": 0,
+    "Region": 0,
+    "Altitude": 0,
+    "Crop_Type": 0,
+    "Irrigation_Type": 0,
+    "Fertilizer_Used": 0,
+    "Pesticide_Used": 0,
+    "Crop_Yield_ton_per_hectare": 0
+  },
+  "duplicate_rows": 0,
+  "dtypes": {
+    "N": "int64",
+    "P": "int64",
+    "K": "int64",
+    "Soil_pH": "float64",
+    "Soil_Moisture": "float64",
+    "Soil_Type": "str",
+    "Organic_Carbon": "float64",
+    "Temperature": "float64",
+    "Humidity": "float64",
+    "Rainfall": "float64",
+    "Sunlight_Hours": "float64",
+    "Wind_Speed": "float64",
+    "Region": "str",
+    "Altitude": "int64",
+    "Crop_Type": "str",
+    "Irrigation_Type": "str",
+    "Fertilizer_Used": "float64",
+    "Pesticide_Used": "float64",
+    "Crop_Yield_ton_per_hectare": "float64"
+  },
+  "categories": {
+    "Soil_Type": [
+      "Clay",
+      "Loamy",
+      "Sandy",
+      "Silt"
+    ],
+    "Region": [
+      "Central",
+      "East",
+      "North",
+      "South",
+      "West"
+    ],
+    "Crop_Type": [
+      "Cotton",
+      "Maize",
+      "Potato",
+      "Rice",
+      "Sugarcane",
+      "Wheat"
+    ],
+    "Irrigation_Type": [
+      "Canal",
+      "Drip",
+      "Rainfed",
+      "Sprinkler"
+    ]
+  },
+  "crop_counts": {
+    "Cotton": 1666,
+    "Maize": 1658,
+    "Potato": 1670,
+    "Rice": 1702,
+    "Sugarcane": 1633,
+    "Wheat": 1671
+  },
+  "seed_list": [
+    20261012,
+    314159,
+    271828,
+    8675309,
+    42
+  ],
+  "permutation_seeds": [
+    11,
+    29,
+    47
+  ],
+  "bootstrap_seed": 20261013,
+  "bootstrap_replicates": 1000,
+  "permutation_repeats_per_seed": 20,
+  "versions": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "platform": "Linux-6.18.38+-x86_64-with-glibc2.39",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1",
+    "statsmodels": "0.15.0"
+  },
+  "result_rows": 1001,
+  "analysis_status": {
+    "A0": "COMPLETED",
+    "A1": "PARTIALLY_COMPLETED",
+    "A2": "COMPLETED",
+    "A3": "COMPLETED",
+    "A4": "PARTIALLY_COMPLETED",
+    "A5": "PARTIALLY_COMPLETED",
+    "A6": "COMPLETED",
+    "A7": "COMPLETED",
+    "A8": "COMPLETED"
+  },
+  "plan_gaps": [
+    "The separate analysis register referenced by QUESTIONS.md is not in the supplied archive.",
+    "No fixed BQ2 seed or exact BQ2 specification was supplied; the five-seed comparison is complete, but exact fixed-seed BQ2 reproduction is not assessable.",
+    "The exact four Cotton quadratic tests and extended categorical-predictor list were absent from the referenced analysis register; transparent operational definitions are documented in methods."
+  ]
+}

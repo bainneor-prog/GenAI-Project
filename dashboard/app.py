@@ -5,10 +5,10 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 try:
-    from dashboard.evidence import ROOT, load_evidence, eligible_findings, load_csv, load_source_dataset
+    from dashboard.evidence import ROOT, DatasetValidationError, load_evidence, eligible_findings, load_csv, load_source_dataset, load_crop_yield_summary
     from dashboard.charts import crop_yield_boxplot
 except ModuleNotFoundError:
-    from evidence import ROOT, load_evidence, eligible_findings, load_csv, load_source_dataset
+    from evidence import ROOT, DatasetValidationError, load_evidence, eligible_findings, load_csv, load_source_dataset, load_crop_yield_summary
     from charts import crop_yield_boxplot
 try:
     from dashboard.exploration import descriptive_summary, safe_pearson, outlier_flags, numeric_columns
@@ -46,7 +46,15 @@ def get_data():
     human_register = pd.read_csv(ROOT / "results/PHASE9_HUMAN_VERIFICATION_REGISTER.csv")
     return manifest, findings, decisions, refs, register, human_register, load_source_dataset()
 
-manifest, findings, decisions, refs, register, human_register, data = get_data()
+try:
+    manifest, findings, decisions, refs, register, human_register, data = get_data()
+except DatasetValidationError as exc:
+    st.error(
+        "The dashboard cannot safely load the approved dataset. Data-dependent charts and "
+        "calculations have been stopped to avoid displaying incomplete or inconsistent results."
+    )
+    st.caption(str(exc))
+    st.stop()
 decisions["Finding_ID"] = decisions["Finding_ID"].astype(str).str.strip()
 human_register["Finding_ID"] = human_register["Finding_ID"].astype(str).str.strip()
 # Decision-register schemas evolved across phases. Keep the explorer
@@ -144,13 +152,15 @@ if page == "Understanding the Results":
     st.caption("These links open the version-controlled evidence records. Accepted findings remain qualified and are not claims of real-world agricultural validity.")
 elif page == "Overview":
     st.markdown('<div class="hero"><h1>Crop Yield Insights</h1><p>Results from the analysed dataset — clear comparisons, relationships and predictive performance.</p></div>', unsafe_allow_html=True)
-    summary = data.groupby("Crop_Type")["Crop_Yield_ton_per_hectare"].agg(count="size", mean="mean").reset_index().sort_values("mean", ascending=False)
+    summary = load_crop_yield_summary().sort_values("mean", ascending=False)
+    rainfall_overall = evidence("results/baseline_details/A016_overall_rainfall_correlation.csv", show_warning=False)
+    pooled_rainfall = float(rainfall_overall.iloc[0]["r"])
     m = pd.read_csv(ROOT / "results/model_metrics.csv")
     best = m[(m.Analysis_ID == "A059") & m.holdout_RMSE.notna()]
     benchmark = m[(m.Analysis_ID == "A061") & m.holdout_RMSE.notna()]
     improvement = (1-best.iloc[0].holdout_RMSE/benchmark.iloc[0].holdout_RMSE)*100 if not best.empty and not benchmark.empty else None
     c1, c2, c3, c4 = st.columns(4)
-    cards = [("Highest average yield", f"{summary.iloc[0].Crop_Type} · {summary.iloc[0]['mean']:.2f}"), ("Strongest crop association", "Fertiliser · positive"), ("Rainfall correlation", "0.0312 pooled"), ("Gradient boosting vs crop mean", f"{improvement:.1f}% lower RMSE" if improvement is not None else "Stored result unavailable")]
+    cards = [("Highest average yield", f"{summary.iloc[0].Crop_Type} · {summary.iloc[0]['mean']:.2f}"), ("Strongest crop association", "Fertiliser · positive"), ("Rainfall correlation", f"{pooled_rainfall:.4f} pooled"), ("Gradient boosting vs crop mean", f"{improvement:.1f}% lower RMSE" if improvement is not None else "Stored result unavailable")]
     for col, (label, value) in zip((c1,c2,c3,c4), cards):
         col.markdown(f'<div class="kpi"><div class="kpi-label">{label}</div><div class="kpi-value">{value}</div></div>', unsafe_allow_html=True)
     st.markdown("### What stands out")
@@ -244,7 +254,7 @@ elif page == "Crop Performance":
     st.title("Crop performance")
     analysis_context(["A002"])
     st.markdown('<div class="section-card">Use the controls to compare crop populations. These are descriptive summaries of the selected records, not recommendations.</div>', unsafe_allow_html=True)
-    summary = data.groupby("Crop_Type")["Crop_Yield_ton_per_hectare"].agg(count="size", mean="mean", median="median", sd="std").reset_index().sort_values("mean", ascending=False)
+    summary = load_crop_yield_summary().sort_values("mean", ascending=False)
     crop_options = category_options(data["Crop_Type"])
     choice = st.multiselect("Compare crops", crop_options, default=crop_options)
     selected = data[data.Crop_Type.isin(choice)]
@@ -285,7 +295,9 @@ elif page == "Yield Relationships":
                 cropcol = next((c for c in fertiliser.columns if "crop" in c.lower()), fertiliser.columns[0])
                 st.plotly_chart(px.bar(fertiliser.sort_values(fcol), x=fcol, y=cropcol, orientation="h", color=fcol, color_continuous_scale="Sunset", title="Fertiliser–yield association by crop"), width="stretch")
         st.subheader("Pooled versus within-crop rainfall")
-        pooled = pd.DataFrame({"Estimate": [0.0312, float(rainfall[rcol].mean()) if not rainfall.empty else 0], "View": ["Pooled", "Average crop-specific"]})
+        rainfall_overall = evidence("results/baseline_details/A016_overall_rainfall_correlation.csv", show_warning=False)
+        pooled_estimate = float(rainfall_overall.iloc[0]["r"])
+        pooled = pd.DataFrame({"Estimate": [pooled_estimate, float(rainfall[rcol].mean()) if not rainfall.empty else 0], "View": ["Pooled", "Average crop-specific"]})
         st.plotly_chart(px.bar(pooled, x="Estimate", y="View", orientation="h", color="View", title="Why subgroup analysis matters"), width="stretch")
         st.caption("The pooled relationship is weak, while crop-specific relationships are stronger. Correlation is association, not proof of a causal response.")
     except ModuleNotFoundError:
@@ -544,5 +556,4 @@ elif page == "Analysis Process":
             st.markdown(journey_path.read_text(encoding="utf-8"))
     st.subheader("AI and human responsibilities")
     st.markdown("**GenAI assistance:** planning, code generation, exploratory suggestions and interpretation drafts where documented.  \n**Deterministic software:** calculations, model fitting, stored numerical outputs and tests.  \n**Human oversight:** methodology approval, evidence eligibility, unresolved issues, finding decisions and final conclusions.")
-
 

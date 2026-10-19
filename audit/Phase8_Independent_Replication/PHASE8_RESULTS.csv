@@ -1,0 +1,1002 @@
+analysis_id,method,crop,feature,n,estimate,std_error,ci_lower,ci_upper,statistic,p_value,p_adj,metric,value,status,notes
+A0,Dataset validation,,,10000,10000,,,,,,,rows,10000,COMPLETED,Source SHA-256: 58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c
+A0,Dataset validation,,,10000,19,,,,,,,columns,19,COMPLETED,Source SHA-256: 58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c
+A0,Dataset validation,,,10000,0,,,,,,,missing_cells,0,COMPLETED,Source SHA-256: 58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c
+A0,Dataset validation,,,10000,0,,,,,,,exact_duplicate_rows,0,COMPLETED,Source SHA-256: 58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c
+A0,Dataset validation,,,,1,,,,,,,sha256_verified,1,COMPLETED,58d1866b7a01519593b68c9c929007d10051d070aa957773589f136065cc5f1c
+A0,Dataset validation,,,,15,,,,,,,numeric_column_count,15,COMPLETED,"N, P, K, Soil_pH, Soil_Moisture, Organic_Carbon, Temperature, Humidity, Rainfall, Sunlight_Hours, Wind_Speed, Altitude, Fertilizer_Used, Pesticide_Used, Crop_Yield_ton_per_hectare"
+A0,Dataset validation,,,,4,,,,,,,categorical_column_count,4,COMPLETED,"Soil_Type, Region, Crop_Type, Irrigation_Type"
+A0,Dataset validation,,,,1,,,,,,,target_column_confirmed,1,COMPLETED,Crop_Yield_ton_per_hectare
+A0_RANGE,Observed numeric range,,N,10000,30,,,,,,,minimum,30,COMPLETED,
+A0_RANGE,Observed numeric range,,N,10000,179,,,,,,,maximum,179,COMPLETED,
+A0_RANGE,Observed numeric range,,P,10000,15,,,,,,,minimum,15,COMPLETED,
+A0_RANGE,Observed numeric range,,P,10000,99,,,,,,,maximum,99,COMPLETED,
+A0_RANGE,Observed numeric range,,K,10000,20,,,,,,,minimum,20,COMPLETED,
+A0_RANGE,Observed numeric range,,K,10000,149,,,,,,,maximum,149,COMPLETED,
+A0_RANGE,Observed numeric range,,Soil_pH,10000,4.8,,,,,,,minimum,4.8,COMPLETED,
+A0_RANGE,Observed numeric range,,Soil_pH,10000,8.2,,,,,,,maximum,8.2,COMPLETED,
+A0_RANGE,Observed numeric range,,Soil_Moisture,10000,15,,,,,,,minimum,15,COMPLETED,
+A0_RANGE,Observed numeric range,,Soil_Moisture,10000,64.99,,,,,,,maximum,64.99,COMPLETED,
+A0_RANGE,Observed numeric range,,Organic_Carbon,10000,0.3,,,,,,,minimum,0.3,COMPLETED,
+A0_RANGE,Observed numeric range,,Organic_Carbon,10000,1.6,,,,,,,maximum,1.6,COMPLETED,
+A0_RANGE,Observed numeric range,,Temperature,10000,10,,,,,,,minimum,10,COMPLETED,
+A0_RANGE,Observed numeric range,,Temperature,10000,40,,,,,,,maximum,40,COMPLETED,
+A0_RANGE,Observed numeric range,,Humidity,10000,30.01,,,,,,,minimum,30.01,COMPLETED,
+A0_RANGE,Observed numeric range,,Humidity,10000,89.99,,,,,,,maximum,89.99,COMPLETED,
+A0_RANGE,Observed numeric range,,Rainfall,10000,300.7,,,,,,,minimum,300.7,COMPLETED,
+A0_RANGE,Observed numeric range,,Rainfall,10000,2799.26,,,,,,,maximum,2799.26,COMPLETED,
+A0_RANGE,Observed numeric range,,Sunlight_Hours,10000,4,,,,,,,minimum,4,COMPLETED,
+A0_RANGE,Observed numeric range,,Sunlight_Hours,10000,11,,,,,,,maximum,11,COMPLETED,
+A0_RANGE,Observed numeric range,,Wind_Speed,10000,1,,,,,,,minimum,1,COMPLETED,
+A0_RANGE,Observed numeric range,,Wind_Speed,10000,18,,,,,,,maximum,18,COMPLETED,
+A0_RANGE,Observed numeric range,,Altitude,10000,0,,,,,,,minimum,0,COMPLETED,
+A0_RANGE,Observed numeric range,,Altitude,10000,2199,,,,,,,maximum,2199,COMPLETED,
+A0_RANGE,Observed numeric range,,Fertilizer_Used,10000,60,,,,,,,minimum,60,COMPLETED,
+A0_RANGE,Observed numeric range,,Fertilizer_Used,10000,349.96,,,,,,,maximum,349.96,COMPLETED,
+A0_RANGE,Observed numeric range,,Pesticide_Used,10000,0,,,,,,,minimum,0,COMPLETED,
+A0_RANGE,Observed numeric range,,Pesticide_Used,10000,25,,,,,,,maximum,25,COMPLETED,
+A0_RANGE,Observed numeric range,,Crop_Yield_ton_per_hectare,10000,1.76,,,,,,,minimum,1.76,COMPLETED,
+A0_RANGE,Observed numeric range,,Crop_Yield_ton_per_hectare,10000,80.99,,,,,,,maximum,80.99,COMPLETED,
+A0,Dataset validation,,,,0,,,,,,,bound_or_blank_violations_total,0,COMPLETED,"{""Altitude"": 0, ""Crop_Type"": 0, ""Crop_Yield_ton_per_hectare"": 0, ""Fertilizer_Used"": 0, ""Humidity"": 0, ""Irrigation_Type"": 0, ""K"": 0, ""N"": 0, ""Organic_Carbon"": 0, ""P"": 0, ""Pesticide_Used"": 0, ""Rainfall"": 0, ""Region"": 0, ""Soil_Moisture"": 0, ""Soil_Type"": 0, ""Soil_pH"": 0, ""Sunlight_Hours"": 0, ""Temperature"": 0, ""Wind_Speed"": 0}"
+A1,Global training mean,All,,2000,,,,,,,,RMSE,23.9973340223,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,MAE,18.03610739,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,R2,-2.66089512158e-06,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE,1.67289163928,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE,1.35546092451,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,R2,0.995140285188,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,RMSE,1.07485158654,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,MAE,0.86976342502,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,R2,0.997993809516,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,RMSE,1.12630108511,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,MAE,0.902652192039,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,R2,0.997797153844,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE,1.25780810068,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE,1.00759024656,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,R2,0.997252713593,PARTIALLY_COMPLETED,Seed 20261012; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,-1334.48227362,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Global training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,-1230.62540306,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,35.7488816783,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,35.8326448742,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,32.6733986431,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,33.4062549707,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,24.812338639,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,25.664382621,PARTIALLY_COMPLETED,Seed 20261012; positive is improvement over crop-specific training mean.
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,RMSE,1.13792226061,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,R2,0.58040638156,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,RMSE,1.13077107324,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,R2,0.58566361958,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Maize,,332,,,,,,,,RMSE,1.07132782882,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Maize,,332,,,,,,,,R2,0.636515997753,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,RMSE,1.09096008134,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,R2,0.623072131588,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Potato,,334,,,,,,,,RMSE,1.17724353551,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Potato,,334,,,,,,,,R2,0.454560042848,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,RMSE,1.1792614669,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,R2,0.452688546071,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Rice,,340,,,,,,,,RMSE,1.04854086595,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Rice,,340,,,,,,,,R2,0.571004132013,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,RMSE,1.04606253121,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,R2,0.573029687548,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.14805725643,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,R2,0.552218063389,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.15351484661,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,R2,0.547950647401,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,RMSE,1.16994404856,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,R2,0.448129147814,COMPLETED,"Seed 20261012; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,RMSE,1.13855660104,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,R2,0.477343299002,COMPLETED,Seed 20261012; model trained only on this crop's training rows.
+A1,Global training mean,All,,2000,,,,,,,,RMSE,24.0466000085,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,MAE,18.0901303888,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,R2,-3.38836760871e-06,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE,1.61349269422,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE,1.29743845426,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,R2,0.995497765419,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,RMSE,1.10087123234,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,MAE,0.879015763406,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,R2,0.997904116403,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,RMSE,1.12271299179,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,MAE,0.895537851792,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,R2,0.997820124907,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE,1.24705213124,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE,0.994723747486,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,R2,0.997310550892,PARTIALLY_COMPLETED,Seed 314159; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,-1390.34452369,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Global training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,-1294.29583957,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,31.7709193053,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,32.2499066895,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,30.4172249549,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,30.976467604,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,22.7110147011,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,23.3317199577,PARTIALLY_COMPLETED,Seed 314159; positive is improvement over crop-specific training mean.
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,RMSE,1.1092968936,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,R2,0.538828146683,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,RMSE,1.10920819829,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,R2,0.53890189096,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Maize,,332,,,,,,,,RMSE,1.06614952978,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Maize,,332,,,,,,,,R2,0.553792009075,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,RMSE,1.09167943927,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,R2,0.532166447274,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Potato,,334,,,,,,,,RMSE,1.13755734589,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Potato,,334,,,,,,,,R2,0.507636663461,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,RMSE,1.12747360082,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,R2,0.516326970186,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Rice,,340,,,,,,,,RMSE,1.14061191705,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Rice,,340,,,,,,,,R2,0.517843216485,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,RMSE,1.14318957583,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,R2,0.515661510358,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.16930047514,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,R2,0.46085520521,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.15747851412,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,R2,0.471701910013,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,RMSE,1.11088955513,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,R2,0.501330405178,COMPLETED,"Seed 314159; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,RMSE,1.12741279547,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,R2,0.486385777741,COMPLETED,Seed 314159; model trained only on this crop's training rows.
+A1,Global training mean,All,,2000,,,,,,,,RMSE,23.9867187226,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,MAE,18.02158373,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,R2,-5.38161897246e-06,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE,1.65259142018,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE,1.32265044179,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,R2,0.995253301582,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,RMSE,1.0702389139,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,MAE,0.855794874708,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,R2,0.99800922523,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,RMSE,1.10345169093,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,MAE,0.884687917553,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,R2,0.997883748391,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE,1.21823090814,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE,0.974783268335,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,R2,0.997420592964,PARTIALLY_COMPLETED,Seed 271828; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,-1351.46092553,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Global training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,-1262.53564514,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,35.2387468049,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,35.2969728305,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,33.2290076385,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,33.1124921898,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,26.2835996084,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,26.3007641674,PARTIALLY_COMPLETED,Seed 271828; positive is improvement over crop-specific training mean.
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,RMSE,1.19125942589,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,R2,0.561865980692,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,RMSE,1.2047811991,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,R2,0.551863168831,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Maize,,332,,,,,,,,RMSE,1.09482921383,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Maize,,332,,,,,,,,R2,0.588272360923,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,RMSE,1.1048643489,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,R2,0.580690031077,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Potato,,334,,,,,,,,RMSE,1.09665963515,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Potato,,334,,,,,,,,R2,0.50184324955,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,RMSE,1.09649726904,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,R2,0.501990747979,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Rice,,340,,,,,,,,RMSE,1.05834525591,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Rice,,340,,,,,,,,R2,0.556553972361,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,RMSE,1.06899651707,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,R2,0.547583313624,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.10741718577,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,R2,0.516029068349,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.11051195309,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,R2,0.513320296491,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,RMSE,1.06825986016,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,R2,0.561491656514,COMPLETED,"Seed 271828; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,RMSE,1.07536585231,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,R2,0.55563839778,COMPLETED,Seed 271828; model trained only on this crop's training rows.
+A1,Global training mean,All,,2000,,,,,,,,RMSE,24.0158331856,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,MAE,18.0222920625,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,R2,-1.71411346717e-06,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE,1.69137802144,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE,1.35908195872,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,R2,0.995039941558,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,RMSE,1.1120238371,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,MAE,0.896292352192,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,R2,0.997855956357,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,RMSE,1.16509774411,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,MAE,0.935845718139,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,R2,0.997646413574,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE,1.2953861106,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE,1.04651966194,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,R2,0.997090596881,PARTIALLY_COMPLETED,Seed 8675309; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,-1319.89743755,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Global training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,-1226.06366724,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,34.2533825671,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,34.0516334248,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,31.1154733391,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,31.1413331524,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,23.4123836193,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,22.9980462008,PARTIALLY_COMPLETED,Seed 8675309; positive is improvement over crop-specific training mean.
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,RMSE,1.18415148367,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,R2,0.535660686578,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,RMSE,1.18459168299,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,R2,0.535315393184,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Maize,,332,,,,,,,,RMSE,1.08289854558,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Maize,,332,,,,,,,,R2,0.571361834042,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,RMSE,1.09784018869,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,R2,0.559451682331,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Potato,,334,,,,,,,,RMSE,1.14700211335,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Potato,,334,,,,,,,,R2,0.568285865255,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,RMSE,1.14249540344,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,R2,0.571671714467,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Rice,,340,,,,,,,,RMSE,1.14527871214,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Rice,,340,,,,,,,,R2,0.524596988678,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,RMSE,1.1434449689,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,R2,0.52611813657,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.19398508293,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,R2,0.455714486563,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.19614438212,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,R2,0.453744046535,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,RMSE,1.23216610368,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,R2,0.487151049049,COMPLETED,"Seed 8675309; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,RMSE,1.23675523318,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,R2,0.483323784145,COMPLETED,Seed 8675309; model trained only on this crop's training rows.
+A1,Global training mean,All,,2000,,,,,,,,RMSE,23.9987528321,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,MAE,18.01388953,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,R2,-2.17023296445e-07,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE,1.67213172297,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE,1.35050395178,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Crop-specific training mean,All,,2000,,,,,,,,R2,0.995145285206,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,RMSE,1.09371029112,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,MAE,0.879541400514,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Linear regression,All,,2000,,,,,,,,R2,0.997923043763,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,RMSE,1.11868589549,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,MAE,0.896068981043,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Random Forest,All,,2000,,,,,,,,R2,0.997827103334,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE,1.24127789827,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE,0.990907108663,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Gradient boosting,All,,2000,,,,,,,,R2,0.997324772047,PARTIALLY_COMPLETED,Seed 42; 80/20 stratified split. Crop-mean benchmark is reference for improvement.
+A1,Global training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,-1335.21903822,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Global training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,-1233.86425906,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Crop-specific training mean,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,0,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,34.5918580398,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Linear regression,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,34.8730968646,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,33.0982194693,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Random Forest,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,33.649288485,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,RMSE_improvement_vs_crop_mean_pct,25.7667394726,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A1,Gradient boosting,All,,2000,,,,,,,,MAE_improvement_vs_crop_mean_pct,26.6268634491,PARTIALLY_COMPLETED,Seed 42; positive is improvement over crop-specific training mean.
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,RMSE,1.11510091286,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Cotton,,333,,,,,,,,R2,0.567383864006,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,RMSE,1.12064649919,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Cotton,,333,,,,,,,,R2,0.563070217244,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Maize,,332,,,,,,,,RMSE,1.1069473745,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Maize,,332,,,,,,,,R2,0.554157040258,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,RMSE,1.10277035564,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Maize,,332,,,,,,,,R2,0.557515430817,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Potato,,334,,,,,,,,RMSE,1.1243308876,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Potato,,334,,,,,,,,R2,0.558607779213,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,RMSE,1.11807870153,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Potato,,334,,,,,,,,R2,0.56350312335,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Rice,,340,,,,,,,,RMSE,1.12570410647,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Rice,,340,,,,,,,,R2,0.557516966035,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,RMSE,1.1151811212,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Rice,,340,,,,,,,,R2,0.565750887091,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.12480983743,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Sugarcane,,327,,,,,,,,R2,0.524346004256,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,RMSE,1.11723589654,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Sugarcane,,327,,,,,,,,R2,0.53073009889,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,RMSE,1.11501747697,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Pooled Random Forest,Wheat,,334,,,,,,,,R2,0.544657533415,COMPLETED,"Seed 42; within-crop holdout metric, pooled model trained on all crops."
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,RMSE,1.11358694482,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A2,Crop-specific Random Forest,Wheat,,334,,,,,,,,R2,0.545825163881,COMPLETED,Seed 42; model trained only on this crop's training rows.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,RMSE_mean_across_seeds,24.0090477542,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,RMSE_sd_across_seeds,0.0234413975224,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,MAE_mean_across_seeds,18.0368006203,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,MAE_sd_across_seeds,0.0308687334926,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,R2_mean_across_seeds,-2.67240369327e-06,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,R2_sd_across_seeds,1.92352523086e-06,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_mean_across_seeds,-1346.28083972,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_sd_across_seeds,27.0466960025,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_mean_across_seeds,-1249.47696281,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Global training mean,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_sd_across_seeds,28.8382607475,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,RMSE_mean_across_seeds,1.66049709962,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,RMSE_sd_across_seeds,0.0296417539126,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,MAE_mean_across_seeds,1.33702714621,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,MAE_sd_across_seeds,0.0263713736175,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,R2_mean_across_seeds,0.995215315791,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,R2_sd_across_seeds,0.000175007648788,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_mean_across_seeds,0,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_sd_across_seeds,0,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_mean_across_seeds,0,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Crop-specific training mean,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_sd_across_seeds,0,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,RMSE_mean_across_seeds,1.0903391722,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,RMSE_sd_across_seeds,0.0175812337345,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,MAE_mean_across_seeds,0.876081563168,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,MAE_sd_across_seeds,0.0148368173539,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,R2_mean_across_seeds,0.997937230254,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,R2_sd_across_seeds,6.38116750146e-05,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_mean_across_seeds,34.3207576791,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_sd_across_seeds,1.53801436402,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_mean_across_seeds,34.4608509367,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Linear regression,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_sd_across_seeds,1.39701454624,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,RMSE_mean_across_seeds,1.12724988149,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,RMSE_sd_across_seeds,0.0228781556177,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,MAE_mean_across_seeds,0.902958532113,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,MAE_sd_across_seeds,0.0194808150221,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,R2_mean_across_seeds,0.99779490881,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,R2_sd_across_seeds,8.89110303331e-05,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_mean_across_seeds,32.106664809,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_sd_across_seeds,1.26497913627,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_mean_across_seeds,32.4571672804,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Random Forest,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_sd_across_seeds,1.29182643291,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,RMSE_mean_across_seeds,1.25195102979,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,RMSE_sd_across_seeds,0.0282660267482,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,MAE_mean_across_seeds,1.0029048066,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,MAE_sd_across_seeds,0.0270458146149,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,R2_mean_across_seeds,0.997279845275,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,R2_sd_across_seeds,0.000121780791425,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_mean_across_seeds,24.5972152081,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,RMSE_improvement_vs_crop_mean_pct_sd_across_seeds,1.51818441633,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_mean_across_seeds,24.9843552792,PARTIALLY_COMPLETED,Unweighted mean across five prespecified random seeds.
+A1_SUMMARY,Gradient boosting,All,,5,,,,,,,,MAE_improvement_vs_crop_mean_pct_sd_across_seeds,1.70072263282,PARTIALLY_COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Cotton,,5,,,,,,,,RMSE_mean_across_seeds,1.14754619533,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Cotton,,5,,,,,,,,RMSE_sd_across_seeds,0.0382724418373,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Cotton,,5,,,,,,,,R2_mean_across_seeds,0.556829011904,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Cotton,,5,,,,,,,,R2_sd_across_seeds,0.0191363362687,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Cotton,,5,,,,,,,,RMSE_mean_across_seeds,1.14999973056,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Cotton,,5,,,,,,,,RMSE_sd_across_seeds,0.0421097228302,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Cotton,,5,,,,,,,,R2_mean_across_seeds,0.55496285796,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Cotton,,5,,,,,,,,R2_sd_across_seeds,0.0203829073269,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Maize,,5,,,,,,,,RMSE_mean_across_seeds,1.0844304985,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Maize,,5,,,,,,,,RMSE_sd_across_seeds,0.0167583086506,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Maize,,5,,,,,,,,R2_mean_across_seeds,0.58081984841,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Maize,,5,,,,,,,,R2_sd_across_seeds,0.0342361814017,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Maize,,5,,,,,,,,RMSE_mean_across_seeds,1.09762288277,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Maize,,5,,,,,,,,RMSE_sd_across_seeds,0.00629880889554,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Maize,,5,,,,,,,,R2_mean_across_seeds,0.570579144618,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Maize,,5,,,,,,,,R2_sd_across_seeds,0.0340138209354,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Potato,,5,,,,,,,,RMSE_mean_across_seeds,1.1365587035,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Potato,,5,,,,,,,,RMSE_sd_across_seeds,0.0296090053368,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Potato,,5,,,,,,,,R2_mean_across_seeds,0.518186720066,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Potato,,5,,,,,,,,R2_sd_across_seeds,0.0462886410145,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Potato,,5,,,,,,,,RMSE_mean_across_seeds,1.13276128835,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Potato,,5,,,,,,,,RMSE_sd_across_seeds,0.0308854200766,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Potato,,5,,,,,,,,R2_mean_across_seeds,0.521236220411,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Potato,,5,,,,,,,,R2_sd_across_seeds,0.0485373638272,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Rice,,5,,,,,,,,RMSE_mean_across_seeds,1.1036961715,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Rice,,5,,,,,,,,RMSE_sd_across_seeds,0.0465699539187,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Rice,,5,,,,,,,,R2_mean_across_seeds,0.545503055114,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Rice,,5,,,,,,,,R2_sd_across_seeds,0.0230157122278,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Rice,,5,,,,,,,,RMSE_mean_across_seeds,1.10337494284,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Rice,,5,,,,,,,,RMSE_sd_across_seeds,0.0441497070246,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Rice,,5,,,,,,,,R2_mean_across_seeds,0.545628707038,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Rice,,5,,,,,,,,R2_sd_across_seeds,0.0246892263284,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Sugarcane,,5,,,,,,,,RMSE_mean_across_seeds,1.14871396754,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Sugarcane,,5,,,,,,,,RMSE_sd_across_seeds,0.034462084509,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Sugarcane,,5,,,,,,,,R2_mean_across_seeds,0.501832565554,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Sugarcane,,5,,,,,,,,R2_sd_across_seeds,0.0419914136359,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Sugarcane,,5,,,,,,,,RMSE_mean_across_seeds,1.1469771185,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Sugarcane,,5,,,,,,,,RMSE_sd_across_seeds,0.0345857253182,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Sugarcane,,5,,,,,,,,R2_mean_across_seeds,0.503489399866,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Sugarcane,,5,,,,,,,,R2_sd_across_seeds,0.0396880001803,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Wheat,,5,,,,,,,,RMSE_mean_across_seeds,1.1392554089,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Wheat,,5,,,,,,,,RMSE_sd_across_seeds,0.0632587083996,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Pooled Random Forest,Wheat,,5,,,,,,,,R2_mean_across_seeds,0.508551958394,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Pooled Random Forest,Wheat,,5,,,,,,,,R2_sd_across_seeds,0.0454623194926,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Wheat,,5,,,,,,,,RMSE_mean_across_seeds,1.13833548536,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Wheat,,5,,,,,,,,RMSE_sd_across_seeds,0.0599655437592,COMPLETED,Sample SD across five seeds.
+A2_SUMMARY,Crop-specific Random Forest,Wheat,,5,,,,,,,,R2_mean_across_seeds,0.50970328451,COMPLETED,Unweighted mean across the same five stratified splits.
+A2_SUMMARY,Crop-specific Random Forest,Wheat,,5,,,,,,,,R2_sd_across_seeds,0.0377543958498,COMPLETED,Sample SD across five seeds.
+Q1,Fertilizer-yield Pearson correlation,Cotton,,1666,0.515336613303,,0.481385030582,0.547971422681,0.515336613303,1.11771555241e-113,,Pearson_r,0.515336613303,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q2,Rainfall-yield Pearson correlation,Cotton,,1666,0.43555827851,,0.397022837408,0.471622015333,0.43555827851,4.36085887191e-78,,Pearson_r,0.43555827851,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q1,Fertilizer-yield Pearson correlation,Maize,,1658,0.534575182891,,0.504281264157,0.568679746105,0.534575182891,3.47780278113e-123,,Pearson_r,0.534575182891,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q2,Rainfall-yield Pearson correlation,Maize,,1658,0.475142765567,,0.440742725838,0.510861956184,0.475142765567,4.01168131109e-94,,Pearson_r,0.475142765567,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q1,Fertilizer-yield Pearson correlation,Potato,,1670,0.492804006816,,0.460112835747,0.5272538469,0.492804006816,6.79599667764e-103,,Pearson_r,0.492804006816,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q2,Rainfall-yield Pearson correlation,Potato,,1670,0.462876282611,,0.426638102453,0.49570598938,0.462876282611,1.94756427089e-89,,Pearson_r,0.462876282611,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q1,Fertilizer-yield Pearson correlation,Rice,,1702,0.533632305665,,0.503233900636,0.565802292721,0.533632305665,6.93461174207e-126,,Pearson_r,0.533632305665,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q2,Rainfall-yield Pearson correlation,Rice,,1702,0.443300678595,,0.405255141588,0.481088022629,0.443300678595,7.40965187298e-83,,Pearson_r,0.443300678595,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q1,Fertilizer-yield Pearson correlation,Sugarcane,,1633,0.498695266326,,0.462911882549,0.533333292088,0.498695266326,2.10988659127e-103,,Pearson_r,0.498695266326,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q2,Rainfall-yield Pearson correlation,Sugarcane,,1633,0.417304566963,,0.376638706849,0.45576644851,0.417304566963,8.12467894381e-70,,Pearson_r,0.417304566963,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q1,Fertilizer-yield Pearson correlation,Wheat,,1671,0.518926049444,,0.486058648028,0.548580551362,0.518926049444,7.4634279884e-116,,Pearson_r,0.518926049444,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+Q2,Rainfall-yield Pearson correlation,Wheat,,1671,0.397579582055,,0.356928838557,0.440296418496,0.397579582055,2.15210494829e-64,,Pearson_r,0.397579582055,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A3_GROUP,Irrigation group summary,Cotton,Canal,421,7.46102137767,0.0835584718337,7.29677648203,7.62526627332,,,,mean_yield_95CI,7.46102137767,COMPLETED,SD=1.71448; no records excluded.
+A3_GROUP,Irrigation group summary,Cotton,Drip,412,7.37640776699,0.0853320214875,7.20866611707,7.54414941691,,,,mean_yield_95CI,7.37640776699,COMPLETED,SD=1.73205; no records excluded.
+A3_GROUP,Irrigation group summary,Cotton,Rainfed,422,7.41286729858,0.0841873849909,7.24738732934,7.57834726782,,,,mean_yield_95CI,7.41286729858,COMPLETED,SD=1.72943; no records excluded.
+A3_GROUP,Irrigation group summary,Cotton,Sprinkler,411,7.46119221411,0.0858300386593,7.29247037027,7.62991405796,,,,mean_yield_95CI,7.46119221411,COMPLETED,SD=1.74004; no records excluded.
+A3,Classical one-way ANOVA,Cotton,,1666,,,,,0.234747025448,0.872191217588,,F_or_W_statistic,0.234747025448,COMPLETED,df1=3; df2=1662; four irrigation groups.
+A3,Welch one-way ANOVA,Cotton,,1666,,,,,0.234189929301,0.872572751008,,F_or_W_statistic,0.234189929301,COMPLETED,df1=3; df2=923; four irrigation groups.
+A3,Brown-Forsythe (median-centered Levene),Cotton,,1666,,,,,0.384669043008,0.764067966443,,F_or_W_statistic,0.384669043008,COMPLETED,df1=3; df2=1662; four irrigation groups.
+A3,Classical one-way ANOVA effect size,Cotton,,1666,0.000423551620875,,,,,,,eta_squared,0.000423551620875,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,Classical one-way ANOVA effect size,Cotton,,1666,-0.0013799080792,,,,,,,omega_squared,-0.0013799080792,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,80% power MDE; one-group mean shift,Cotton,,1666,0.393169237512,,,,,,,MDE_yield_units,0.393169237512,COMPLETED,"Worst of four single-group-vs-rest contrasts; group=Sprinkler; pooled within-group SD=1.72894; one-way F, df=(3,1662), alpha=.05/6, power=.80, common-variance normal model."
+A3_GROUP,Irrigation group summary,Maize,Canal,445,10.0266741573,0.0811424548202,9.86720316377,10.1861451508,,,,mean_yield_95CI,10.0266741573,COMPLETED,SD=1.7117; no records excluded.
+A3_GROUP,Irrigation group summary,Maize,Drip,426,10.1522300469,0.0814395129146,9.99215567914,10.3123044148,,,,mean_yield_95CI,10.1522300469,COMPLETED,SD=1.68089; no records excluded.
+A3_GROUP,Irrigation group summary,Maize,Rainfed,413,10.0966343826,0.0827994786933,9.93387225215,10.259396513,,,,mean_yield_95CI,10.0966343826,COMPLETED,SD=1.68268; no records excluded.
+A3_GROUP,Irrigation group summary,Maize,Sprinkler,374,10.0252406417,0.0898662158371,9.84853272068,10.2019485627,,,,mean_yield_95CI,10.0252406417,COMPLETED,SD=1.73793; no records excluded.
+A3,Classical one-way ANOVA,Maize,,1658,,,,,0.540158921608,0.654824442739,,F_or_W_statistic,0.540158921608,COMPLETED,df1=3; df2=1654; four irrigation groups.
+A3,Welch one-way ANOVA,Maize,,1658,,,,,0.541177814033,0.654190906835,,F_or_W_statistic,0.541177814033,COMPLETED,df1=3; df2=911.39; four irrigation groups.
+A3,Brown-Forsythe (median-centered Levene),Maize,,1658,,,,,0.0505780615613,0.984971258869,,F_or_W_statistic,0.0505780615613,COMPLETED,df1=3; df2=1654; four irrigation groups.
+A3,Classical one-way ANOVA effect size,Maize,,1658,0.000978773086928,,,,,,,eta_squared,0.000978773086928,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,Classical one-way ANOVA effect size,Maize,,1658,-0.00083273341995,,,,,,,omega_squared,-0.00083273341995,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,80% power MDE; one-group mean shift,Maize,,1658,0.400314287286,,,,,,,MDE_yield_units,0.400314287286,COMPLETED,"Worst of four single-group-vs-rest contrasts; group=Sprinkler; pooled within-group SD=1.70263; one-way F, df=(3,1654), alpha=.05/6, power=.80, common-variance normal model."
+A3_GROUP,Irrigation group summary,Potato,Canal,376,24.9660904255,0.0807595482323,24.8072921053,25.1248887458,,,,mean_yield_95CI,24.9660904255,COMPLETED,SD=1.56599; no records excluded.
+A3_GROUP,Irrigation group summary,Potato,Drip,404,24.87,0.0863599796779,24.7002276854,25.0397723146,,,,mean_yield_95CI,24.87,COMPLETED,SD=1.73581; no records excluded.
+A3_GROUP,Irrigation group summary,Potato,Rainfed,433,24.8168591224,0.0813395939642,24.6569885493,24.9767296955,,,,mean_yield_95CI,24.8168591224,COMPLETED,SD=1.69257; no records excluded.
+A3_GROUP,Irrigation group summary,Potato,Sprinkler,457,24.9180743982,0.0803368369914,24.7601980582,25.0759507383,,,,mean_yield_95CI,24.9180743982,COMPLETED,SD=1.71741; no records excluded.
+A3,Classical one-way ANOVA,Potato,,1670,,,,,0.590300695419,0.62137703663,,F_or_W_statistic,0.590300695419,COMPLETED,df1=3; df2=1666; four irrigation groups.
+A3,Welch one-way ANOVA,Potato,,1670,,,,,0.620193051887,0.602028466555,,F_or_W_statistic,0.620193051887,COMPLETED,df1=3; df2=919.63; four irrigation groups.
+A3,Brown-Forsythe (median-centered Levene),Potato,,1670,,,,,1.36831548764,0.250749214415,,F_or_W_statistic,1.36831548764,COMPLETED,df1=3; df2=1666; four irrigation groups.
+A3,Classical one-way ANOVA effect size,Potato,,1670,0.00106183774045,,,,,,,eta_squared,0.00106183774045,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,Classical one-way ANOVA effect size,Potato,,1670,-0.00073652885019,,,,,,,omega_squared,-0.00073652885019,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,80% power MDE; one-group mean shift,Potato,,1670,0.394428761291,,,,,,,MDE_yield_units,0.394428761291,COMPLETED,"Worst of four single-group-vs-rest contrasts; group=Canal; pooled within-group SD=1.68255; one-way F, df=(3,1666), alpha=.05/6, power=.80, common-variance normal model."
+A3_GROUP,Irrigation group summary,Rice,Canal,431,9.45626450116,0.0782085160598,9.3025459607,9.60998304162,,,,mean_yield_95CI,9.45626450116,COMPLETED,SD=1.62365; no records excluded.
+A3_GROUP,Irrigation group summary,Rice,Drip,418,9.42186602871,0.082524291281,9.25965057511,9.58408148231,,,,mean_yield_95CI,9.42186602871,COMPLETED,SD=1.68721; no records excluded.
+A3_GROUP,Irrigation group summary,Rice,Rainfed,434,9.44529953917,0.0829979596853,9.28217055551,9.60842852283,,,,mean_yield_95CI,9.44529953917,COMPLETED,SD=1.72907; no records excluded.
+A3_GROUP,Irrigation group summary,Rice,Sprinkler,419,9.28162291169,0.0773287591582,9.12962121376,9.43362460963,,,,mean_yield_95CI,9.28162291169,COMPLETED,SD=1.58288; no records excluded.
+A3,Classical one-way ANOVA,Rice,,1702,,,,,1.00992506242,0.387333378827,,F_or_W_statistic,1.00992506242,COMPLETED,df1=3; df2=1698; four irrigation groups.
+A3,Welch one-way ANOVA,Rice,,1702,,,,,1.07449202807,0.358978571237,,F_or_W_statistic,1.07449202807,COMPLETED,df1=3; df2=942.78; four irrigation groups.
+A3,Brown-Forsythe (median-centered Levene),Rice,,1702,,,,,1.4777472779,0.218732729541,,F_or_W_statistic,1.4777472779,COMPLETED,df1=3; df2=1698; four irrigation groups.
+A3,Classical one-way ANOVA effect size,Rice,,1702,0.00178114177157,,,,,,,eta_squared,0.00178114177157,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,Classical one-way ANOVA effect size,Rice,,1702,1.74939285444e-05,,,,,,,omega_squared,1.74939285444e-05,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,80% power MDE; one-group mean shift,Rice,,1702,0.373367968487,,,,,,,MDE_yield_units,0.373367968487,COMPLETED,"Worst of four single-group-vs-rest contrasts; group=Drip; pooled within-group SD=1.65707; one-way F, df=(3,1698), alpha=.05/6, power=.80, common-variance normal model."
+A3_GROUP,Irrigation group summary,Sugarcane,Canal,418,74.7948803828,0.0823312082105,74.6330444666,74.9567162989,,,,mean_yield_95CI,74.7948803828,COMPLETED,SD=1.68327; no records excluded.
+A3_GROUP,Irrigation group summary,Sugarcane,Drip,417,74.7919664269,0.0775286685647,74.6395696484,74.9443632053,,,,mean_yield_95CI,74.7919664269,COMPLETED,SD=1.58318; no records excluded.
+A3_GROUP,Irrigation group summary,Sugarcane,Rainfed,391,74.8658567775,0.0828529225836,74.7029625188,75.0287510362,,,,mean_yield_95CI,74.8658567775,COMPLETED,SD=1.63831; no records excluded.
+A3_GROUP,Irrigation group summary,Sugarcane,Sprinkler,407,74.8716216216,0.0817034723138,74.7110069603,75.032236283,,,,mean_yield_95CI,74.8716216216,COMPLETED,SD=1.64831; no records excluded.
+A3,Classical one-way ANOVA,Sugarcane,,1633,,,,,0.288806983818,0.833514160078,,F_or_W_statistic,0.288806983818,COMPLETED,df1=3; df2=1629; four irrigation groups.
+A3,Welch one-way ANOVA,Sugarcane,,1633,,,,,0.28938090432,0.833092890925,,F_or_W_statistic,0.28938090432,COMPLETED,df1=3; df2=903.58; four irrigation groups.
+A3,Brown-Forsythe (median-centered Levene),Sugarcane,,1633,,,,,0.188792457356,0.90406744139,,F_or_W_statistic,0.188792457356,COMPLETED,df1=3; df2=1629; four irrigation groups.
+A3,Classical one-way ANOVA effect size,Sugarcane,,1633,0.000531590159976,,,,,,,eta_squared,0.000531590159976,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,Classical one-way ANOVA effect size,Sugarcane,,1633,-0.00130824880636,,,,,,,omega_squared,-0.00130824880636,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,80% power MDE; one-group mean shift,Sugarcane,,1633,0.380229126799,,,,,,,MDE_yield_units,0.380229126799,COMPLETED,"Worst of four single-group-vs-rest contrasts; group=Rainfed; pooled within-group SD=1.63863; one-way F, df=(3,1629), alpha=.05/6, power=.80, common-variance normal model."
+A3_GROUP,Irrigation group summary,Wheat,Canal,438,8.6799086758,0.0780723422196,8.52646472187,8.83335262973,,,,mean_yield_95CI,8.6799086758,COMPLETED,SD=1.63393; no records excluded.
+A3_GROUP,Irrigation group summary,Wheat,Drip,455,8.83613186813,0.0755780419979,8.68760567533,8.98465806093,,,,mean_yield_95CI,8.83613186813,COMPLETED,SD=1.61213; no records excluded.
+A3_GROUP,Irrigation group summary,Wheat,Rainfed,414,8.78509661836,0.078890559071,8.63001950832,8.94017372839,,,,mean_yield_95CI,8.78509661836,COMPLETED,SD=1.60519; no records excluded.
+A3_GROUP,Irrigation group summary,Wheat,Sprinkler,364,8.57052197802,0.0918614534564,8.38987453373,8.75116942232,,,,mean_yield_95CI,8.57052197802,COMPLETED,SD=1.7526; no records excluded.
+A3,Classical one-way ANOVA,Wheat,,1671,,,,,2.04933354987,0.10506150302,,F_or_W_statistic,2.04933354987,COMPLETED,df1=3; df2=1667; four irrigation groups.
+A3,Welch one-way ANOVA,Wheat,,1671,,,,,1.95884939203,0.118578765406,,F_or_W_statistic,1.95884939203,COMPLETED,df1=3; df2=910.18; four irrigation groups.
+A3,Brown-Forsythe (median-centered Levene),Wheat,,1671,,,,,0.560738683379,0.640971562456,,F_or_W_statistic,0.560738683379,COMPLETED,df1=3; df2=1667; four irrigation groups.
+A3,Classical one-way ANOVA effect size,Wheat,,1671,0.00367451095014,,,,,,,eta_squared,0.00367451095014,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,Classical one-way ANOVA effect size,Wheat,,1671,0.00188035982982,,,,,,,omega_squared,0.00188035982982,COMPLETED,Unadjusted omnibus effect size; omega-squared is not truncated at zero.
+A3,80% power MDE; one-group mean shift,Wheat,,1671,0.390732347047,,,,,,,MDE_yield_units,0.390732347047,COMPLETED,"Worst of four single-group-vs-rest contrasts; group=Sprinkler; pooled within-group SD=1.6477; one-way F, df=(3,1667), alpha=.05/6, power=.80, common-variance normal model."
+A3,Classical one-way ANOVA,Cotton,,1666,,,,,,0.872191217588,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Classical one-way ANOVA,Maize,,1658,,,,,,0.654824442739,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Classical one-way ANOVA,Potato,,1670,,,,,,0.62137703663,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Classical one-way ANOVA,Rice,,1702,,,,,,0.387333378827,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Classical one-way ANOVA,Sugarcane,,1633,,,,,,0.833514160078,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Classical one-way ANOVA,Wheat,,1671,,,,,,0.10506150302,0.630369018122,Holm_adjusted_p,0.630369018122,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Welch one-way ANOVA,Cotton,,1666,,,,,,0.872572751008,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Welch one-way ANOVA,Maize,,1658,,,,,,0.654190906835,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Welch one-way ANOVA,Potato,,1670,,,,,,0.602028466555,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Welch one-way ANOVA,Rice,,1702,,,,,,0.358978571237,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Welch one-way ANOVA,Sugarcane,,1633,,,,,,0.833092890925,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Welch one-way ANOVA,Wheat,,1671,,,,,,0.118578765406,0.711472592435,Holm_adjusted_p,0.711472592435,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Brown-Forsythe (median-centered Levene),Cotton,,1666,,,,,,0.764067966443,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Brown-Forsythe (median-centered Levene),Maize,,1658,,,,,,0.984971258869,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Brown-Forsythe (median-centered Levene),Potato,,1670,,,,,,0.250749214415,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Brown-Forsythe (median-centered Levene),Rice,,1702,,,,,,0.218732729541,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Brown-Forsythe (median-centered Levene),Sugarcane,,1633,,,,,,0.90406744139,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A3,Brown-Forsythe (median-centered Levene),Wheat,,1671,,,,,,0.640971562456,1,Holm_adjusted_p,1,COMPLETED,Holm family-wise correction across six crop-level tests within this test family.
+A4,Numerical OLS,Cotton,,1666,0.589303257795,,,,,,,R2,0.589303257795,PARTIALLY_COMPLETED,
+A4,Numerical OLS,Cotton,,1666,0.585820668824,,,,,,,adjusted_R2,0.585820668824,PARTIALLY_COMPLETED,14 numeric non-target predictors plus intercept.
+A4,Numerical OLS HC3 RESET power 2,Cotton,,1666,,,,,5.61139810558,0.0179586207683,,RESET_F,5.61139810558,PARTIALLY_COMPLETED,df=1.0; HC3 covariance.
+A4,Cook distance,Cotton,,1666,78,,,,,,,flagged_count_4_over_n,78,PARTIALLY_COMPLETED,Threshold Cook's D > 4/n = 0.0024009604; flagged rows retained in primary fit.
+A4,Cook distance,Cotton,,1666,0.00697592505548,,,,,,,max_Cook_distance,0.00697592505548,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS conventional,Cotton,const,1666,1.54167629014,0.313230055593,0.927306267129,2.15604631315,,9.42821908827e-07,,coefficient,1.54167629014,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,const,1666,1.54167629014,0.31962120921,0.914770646345,2.16858193393,,1.54090197039e-06,,coefficient,1.54167629014,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,N,1666,0.00517250697522,0.000629172237568,0.00393844735938,0.00640656659105,,4.0325412029e-16,,coefficient,0.00517250697522,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,N,1666,0.00517250697522,0.000618081811298,0.00396020014243,0.00638481380801,,1.22525642267e-16,,coefficient,0.00517250697522,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,P,1666,0.00664827414009,0.00112582910511,0.00444007080564,0.00885647747455,,4.26671164024e-09,,coefficient,0.00664827414009,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,P,1666,0.00664827414009,0.00114012173236,0.00441203721953,0.00888451106065,,6.60676632523e-09,,coefficient,0.00664827414009,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,K,1666,0.00411567447168,0.000718458971366,0.00270648768744,0.00552486125593,,1.20193784402e-08,,coefficient,0.00411567447168,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,K,1666,0.00411567447168,0.000722080807704,0.0026993838108,0.00553196513257,,1.41849573213e-08,,coefficient,0.00411567447168,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Soil_pH,1666,-0.00284027093679,0.0279401992478,-0.0576422305453,0.0519616886718,,0.919042582103,,coefficient,-0.00284027093679,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Soil_pH,1666,-0.00284027093679,0.0285601154996,-0.0588581354533,0.0531775935797,,0.920793963394,,coefficient,-0.00284027093679,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Soil_Moisture,1666,0.0309921515366,0.00189614248706,0.027273054079,0.0347112489943,,8.89969472431e-56,,coefficient,0.0309921515366,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Soil_Moisture,1666,0.0309921515366,0.00189620764544,0.0272729262773,0.034711376796,,8.97055638923e-56,,coefficient,0.0309921515366,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Organic_Carbon,1666,0.0134880283282,0.0738291576276,-0.131320620972,0.158296677628,,0.855061784626,,coefficient,0.0134880283282,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Organic_Carbon,1666,0.0134880283282,0.0771498604954,-0.137833853852,0.164809910509,,0.861235484098,,coefficient,0.0134880283282,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Temperature,1666,-0.00234099162029,0.00319049272115,-0.00859883007325,0.00391684683267,,0.463211490735,,coefficient,-0.00234099162029,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Temperature,1666,-0.00234099162029,0.00320710550626,-0.00863141442136,0.00394943118078,,0.4655309793,,coefficient,-0.00234099162029,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Humidity,1666,-0.000590799435263,0.00156732201442,-0.00366494779642,0.00248334892589,,0.706260436924,,coefficient,-0.000590799435263,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Humidity,1666,-0.000590799435263,0.00157484038824,-0.00367969434903,0.00249809547851,,0.70759801406,,coefficient,-0.000590799435263,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Rainfall,1666,0.00106184966628,3.78256650237e-05,0.000987658335416,0.00113604099714,,4.34040600317e-142,,coefficient,0.00106184966628,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Rainfall,1666,0.00106184966628,3.76558511694e-05,0.000987991408631,0.00113570792393,,3.8963124039e-143,,coefficient,0.00106184966628,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Sunlight_Hours,1666,0.0228369610371,0.013583114954,-0.00380498630434,0.0494789083785,,0.0928985116651,,coefficient,0.0228369610371,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Sunlight_Hours,1666,0.0228369610371,0.0134129721491,-0.00347126788529,0.0491451899594,,0.0888306992266,,coefficient,0.0228369610371,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Wind_Speed,1666,-0.0573832140473,0.00546958992374,-0.0681112780606,-0.0466551500339,,5.66585431068e-25,,coefficient,-0.0573832140473,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Wind_Speed,1666,-0.0573832140473,0.00542240474437,-0.0680187289606,-0.0467476991339,,2.28219824963e-25,,coefficient,-0.0573832140473,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Altitude,1666,-1.2141968222e-06,4.19786705229e-05,-8.3551240521e-05,8.11228468766e-05,,0.976928590801,,coefficient,-1.2141968222e-06,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Altitude,1666,-1.2141968222e-06,4.2172936325e-05,-8.39322738324e-05,8.1503880188e-05,,0.977034837705,,coefficient,-1.2141968222e-06,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Fertilizer_Used,1666,0.0104627193252,0.000325288265163,0.00982469830719,0.0111007403433,,1.20979818969e-176,,coefficient,0.0104627193252,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Fertilizer_Used,1666,0.0104627193252,0.000330663376245,0.00981415555416,0.0111112830963,,3.70301002628e-172,,coefficient,0.0104627193252,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Cotton,Pesticide_Used,1666,0.00275695379914,0.00378801224513,-0.00467286057739,0.0101867681757,,0.466833005031,,coefficient,0.00275695379914,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Cotton,Pesticide_Used,1666,0.00275695379914,0.003728614981,-0.00455635867128,0.0100702662696,,0.459766669394,,coefficient,0.00275695379914,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_SENS,Exclude primary-fit Cook flags,Cotton,,1588,,,,,,,,adjusted_R2,0.642677096166,PARTIALLY_COMPLETED,Sensitivity only: excluded 78 of 1666 flagged rows; primary analysis retains all observations.
+A4_SENS,Exclude primary-fit Cook flags,Cotton,,1588,,,,,,,,numeric_slope_sign_flips,1,PARTIALLY_COMPLETED,Compared all 14 numeric slopes with primary fit.
+A4_SENS,Exclude primary-fit Cook flags,Cotton,,1588,,,,,,,,HC3_p05_status_changes,0,PARTIALLY_COMPLETED,"Count among 14 numeric slopes, full-sample vs sensitivity fit."
+A4_EXT,Extended OLS,Cotton,,1666,0.593290550918,,,,,,,R2,0.593290550918,PARTIALLY_COMPLETED,
+A4_EXT,Extended OLS,Cotton,,1666,0.587342332284,,,,,,,adjusted_R2,0.587342332284,PARTIALLY_COMPLETED,"Adds one-hot Soil_Type, Region, Irrigation_Type; Crop_Type is constant within crop."
+A4_EXT,Extended OLS HC3 RESET power 2,Cotton,,1666,,,,,5.27280108152,0.0217867112946,,RESET_F,5.27280108152,PARTIALLY_COMPLETED,HC3 covariance.
+A4_EXT_COEF,Extended OLS HC3,Cotton,const,1666,1.39282713136,0.333506255725,0.738684406667,2.04696985606,,3.11834392101e-05,,coefficient,1.39282713136,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,N,1666,0.00519118917566,0.00061996869504,0.0039751759692,0.00640720238213,,1.18482046824e-16,,coefficient,0.00519118917566,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,P,1666,0.00659329774759,0.00114762585307,0.00434233216726,0.00884426332791,,1.09243761909e-08,,coefficient,0.00659329774759,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,K,1666,0.00404327398428,0.000727677101531,0.0026160003613,0.00547054760726,,3.20779679155e-08,,coefficient,0.00404327398428,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Soil_pH,1666,-0.000243082084078,0.0284858280402,-0.0561154888218,0.0556293246536,,0.993192420415,,coefficient,-0.000243082084078,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Soil_Moisture,1666,0.0309557619019,0.00191144396526,0.0272066353351,0.0347048884688,,7.73201200902e-55,,coefficient,0.0309557619019,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Organic_Carbon,1666,0.00374385697813,0.0777157402984,-0.148688624386,0.156176338342,,0.961583649517,,coefficient,0.00374385697813,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Temperature,1666,-0.00274454295344,0.00322584375212,-0.00907174727189,0.00358266136501,,0.39500543193,,coefficient,-0.00274454295344,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Humidity,1666,-0.000747686558531,0.00158717534681,-0.00386078920085,0.00236541608379,,0.637646223657,,coefficient,-0.000747686558531,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Rainfall,1666,0.00105876315344,3.78679580361e-05,0.000984488536924,0.00113303776995,,5.18188472559e-141,,coefficient,0.00105876315344,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Sunlight_Hours,1666,0.0230969593934,0.0134496217362,-0.00328327203443,0.0494771908212,,0.0861140819179,,coefficient,0.0230969593934,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Wind_Speed,1666,-0.0567049439155,0.00543166521886,-0.0673586699698,-0.0460512178611,,9.54367838656e-25,,coefficient,-0.0567049439155,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Altitude,1666,7.57982583308e-07,4.2447248752e-05,-8.24985035481e-05,8.40144687147e-05,,0.985755064595,,coefficient,7.57982583308e-07,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Fertilizer_Used,1666,0.0104377727425,0.000332082630681,0.00978642233119,0.0110891231539,,3.75994734553e-170,,coefficient,0.0104377727425,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Pesticide_Used,1666,0.00272730157131,0.00372864732954,-0.00458610704309,0.0100407101857,,0.464611635884,,coefficient,0.00272730157131,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Soil_Type_Loamy,1666,0.283850360865,0.078401689766,0.130072450904,0.437628270826,,0.000303009338502,,coefficient,0.283850360865,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Soil_Type_Sandy,1666,0.122640174686,0.0775142885266,-0.0293971770251,0.274677526398,,0.113805254939,,coefficient,0.122640174686,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Soil_Type_Silt,1666,0.116833251383,0.07868158722,-0.0374936524271,0.271160155194,,0.137765869793,,coefficient,0.116833251383,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Region_East,1666,0.0772898208578,0.08746901209,-0.0942728317546,0.24885247347,,0.377028019194,,coefficient,0.0772898208578,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Region_North,1666,0.105548601375,0.0837838466813,-0.0587859285262,0.269883131276,,0.20793050957,,coefficient,0.105548601375,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Region_South,1666,0.041466339165,0.0887850630252,-0.132677629779,0.215610308109,,0.640531947247,,coefficient,0.041466339165,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Region_West,1666,0.00942620217127,0.0887117858725,-0.164574040184,0.183426444527,,0.915391846617,,coefficient,0.00942620217127,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Irrigation_Type_Drip,1666,-0.0267785788817,0.0772142320225,-0.178227396568,0.124670238804,,0.728779395718,,coefficient,-0.0267785788817,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Irrigation_Type_Rainfed,1666,-0.0181695286032,0.0777561098407,-0.170681191218,0.134342134011,,0.815267745223,,coefficient,-0.0181695286032,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Cotton,Irrigation_Type_Sprinkler,1666,0.010824131205,0.0763625701587,-0.138954227824,0.160602490234,,0.88729760018,,coefficient,0.010824131205,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4,Numerical OLS,Maize,,1658,0.617107034022,,,,,,,R2,0.617107034022,PARTIALLY_COMPLETED,
+A4,Numerical OLS,Maize,,1658,0.613844403758,,,,,,,adjusted_R2,0.613844403758,PARTIALLY_COMPLETED,14 numeric non-target predictors plus intercept.
+A4,Numerical OLS HC3 RESET power 2,Maize,,1658,,,,,0.207463828387,0.648822756256,,RESET_F,0.207463828387,PARTIALLY_COMPLETED,df=1.0; HC3 covariance.
+A4,Cook distance,Maize,,1658,73,,,,,,,flagged_count_4_over_n,73,PARTIALLY_COMPLETED,Threshold Cook's D > 4/n = 0.0024125452; flagged rows retained in primary fit.
+A4,Cook distance,Maize,,1658,0.00831356832564,,,,,,,max_Cook_distance,0.00831356832564,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS conventional,Maize,const,1658,4.15385496185,0.296159799663,3.57296449605,4.73474542764,,2.69073844663e-42,,coefficient,4.15385496185,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,const,1658,4.15385496185,0.290600481043,3.58386859305,4.72384133064,,8.95468628702e-44,,coefficient,4.15385496185,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,N,1658,0.00533201448138,0.000603705533076,0.00414790107804,0.00651612788471,,2.57843315285e-18,,coefficient,0.00533201448138,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,N,1658,0.00533201448138,0.000601145886386,0.00415292159183,0.00651110737093,,1.86921989439e-18,,coefficient,0.00533201448138,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,P,1658,0.00681389758314,0.00105907455696,0.00473661932525,0.00889117584104,,1.62798919876e-10,,coefficient,0.00681389758314,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,P,1658,0.00681389758314,0.00104394252655,0.00476629942431,0.00886149574198,,8.91038960401e-11,,coefficient,0.00681389758314,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,K,1658,0.00592718607146,0.0006891865014,0.00457540953639,0.00727896260654,,1.82420264473e-17,,coefficient,0.00592718607146,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,K,1658,0.00592718607146,0.000714687552271,0.00452539154834,0.00732898059458,,2.26276930074e-16,,coefficient,0.00592718607146,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Soil_pH,1658,-0.0117165836454,0.0263066479224,-0.063314676913,0.0398815096221,,0.656100300739,,coefficient,-0.0117165836454,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Soil_pH,1658,-0.0117165836454,0.0261974619979,-0.0631005186693,0.0396673513785,,0.654759888353,,coefficient,-0.0117165836454,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Soil_Moisture,1658,0.0316730306852,0.00178770289348,0.0281666143259,0.0351794470444,,2.05619188401e-64,,coefficient,0.0316730306852,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Soil_Moisture,1658,0.0316730306852,0.0017890188051,0.0281640332851,0.0351820280852,,2.49745507751e-64,,coefficient,0.0316730306852,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Organic_Carbon,1658,-0.0173170494341,0.0690165645266,-0.152686753091,0.118052654222,,0.801913910611,,coefficient,-0.0173170494341,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Organic_Carbon,1658,-0.0173170494341,0.0689230006457,-0.152503236062,0.117869137194,,0.801650616524,,coefficient,-0.0173170494341,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Temperature,1658,-0.00186161544074,0.00300127880124,-0.00774835038185,0.00402511950038,,0.535163378943,,coefficient,-0.00186161544074,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Temperature,1658,-0.00186161544074,0.00311663913253,-0.00797461916192,0.00425138828045,,0.550379369282,,coefficient,-0.00186161544074,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Humidity,1658,0.000772309958205,0.00151715663195,-0.00220345455682,0.00374807447323,,0.610784896423,,coefficient,0.000772309958205,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Humidity,1658,0.000772309958205,0.00152334056622,-0.00221558378052,0.00376020369693,,0.612233773375,,coefficient,0.000772309958205,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Rainfall,1658,0.00100541382818,3.58163046329e-05,0.000935163409639,0.00107566424672,,5.7747501937e-142,,coefficient,0.00100541382818,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Rainfall,1658,0.00100541382818,3.54665720284e-05,0.000935849378281,0.00107497827808,,2.97844263994e-144,,coefficient,0.00100541382818,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Sunlight_Hours,1658,0.00110452998352,0.0129518905333,-0.0242994233328,0.0265084832998,,0.932049625893,,coefficient,0.00110452998352,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Sunlight_Hours,1658,0.00110452998352,0.0131461560707,-0.0246804574862,0.0268895174532,,0.933051373608,,coefficient,0.00110452998352,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Wind_Speed,1658,-0.051195752897,0.00538150564846,-0.0617510859515,-0.0406404198425,,6.3144771223e-21,,coefficient,-0.051195752897,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Wind_Speed,1658,-0.051195752897,0.00550185697639,-0.0619871441168,-0.0404043616772,,4.13176744023e-20,,coefficient,-0.051195752897,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Altitude,1658,5.81100302051e-05,4.09178514986e-05,-2.21466077431e-05,0.000138366668153,,0.155749873288,,coefficient,5.81100302051e-05,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Altitude,1658,5.81100302051e-05,4.1430279175e-05,-2.31516879462e-05,0.000139371748356,,0.160925644858,,coefficient,5.81100302051e-05,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Fertilizer_Used,1658,0.0102928483528,0.000312769862583,0.00967937876181,0.0109063179438,,7.21434967881e-183,,coefficient,0.0102928483528,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Fertilizer_Used,1658,0.0102928483528,0.000309155918382,0.00968646718411,0.0108992295214,,3.44746867294e-186,,coefficient,0.0102928483528,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Maize,Pesticide_Used,1658,0.00231035304,0.00361369280029,-0.00477757616709,0.00939828224708,,0.522695452962,,coefficient,0.00231035304,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Maize,Pesticide_Used,1658,0.00231035304,0.00375135760296,-0.00504759313576,0.00966829921576,,0.53806484919,,coefficient,0.00231035304,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_SENS,Exclude primary-fit Cook flags,Maize,,1585,,,,,,,,adjusted_R2,0.668231997858,PARTIALLY_COMPLETED,Sensitivity only: excluded 73 of 1658 flagged rows; primary analysis retains all observations.
+A4_SENS,Exclude primary-fit Cook flags,Maize,,1585,,,,,,,,numeric_slope_sign_flips,0,PARTIALLY_COMPLETED,Compared all 14 numeric slopes with primary fit.
+A4_SENS,Exclude primary-fit Cook flags,Maize,,1585,,,,,,,,HC3_p05_status_changes,0,PARTIALLY_COMPLETED,"Count among 14 numeric slopes, full-sample vs sensitivity fit."
+A4_EXT,Extended OLS,Maize,,1658,0.619757954145,,,,,,,R2,0.619757954145,PARTIALLY_COMPLETED,
+A4_EXT,Extended OLS,Maize,,1658,0.6141695836,,,,,,,adjusted_R2,0.6141695836,PARTIALLY_COMPLETED,"Adds one-hot Soil_Type, Region, Irrigation_Type; Crop_Type is constant within crop."
+A4_EXT,Extended OLS HC3 RESET power 2,Maize,,1658,,,,,0.195887942757,0.658119307719,,RESET_F,0.195887942757,PARTIALLY_COMPLETED,HC3 covariance.
+A4_EXT_COEF,Extended OLS HC3,Maize,const,1658,4.19255701876,0.30855716701,3.58734751419,4.79776652333,,6.42624553114e-40,,coefficient,4.19255701876,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,N,1658,0.00537988097736,0.000607851368706,0.00418763051282,0.00657213144189,,2.21342883483e-18,,coefficient,0.00537988097736,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,P,1658,0.00684871952396,0.00105216656306,0.00478498135017,0.00891245769774,,1.00276715057e-10,,coefficient,0.00684871952396,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,K,1658,0.00595480420853,0.000718914189448,0.00454471315592,0.00736489526115,,2.47021290919e-16,,coefficient,0.00595480420853,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Soil_pH,1658,-0.0124256707547,0.0263760407194,-0.0641601052225,0.039308763713,,0.637634470296,,coefficient,-0.0124256707547,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Soil_Moisture,1658,0.0315819481608,0.00179635868219,0.0280585383544,0.0351053579672,,1.67298728713e-63,,coefficient,0.0315819481608,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Organic_Carbon,1658,-0.0199080864096,0.0694870192348,-0.1562011594,0.11638498658,,0.774530925926,,coefficient,-0.0199080864096,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Temperature,1658,-0.00177542357054,0.0031372992304,-0.00792897797119,0.00437813083011,,0.571533893351,,coefficient,-0.00177542357054,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Humidity,1658,0.000619364605046,0.00153185791245,-0.00238524869642,0.00362397790651,,0.686028536792,,coefficient,0.000619364605046,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Rainfall,1658,0.00101166854577,3.56062716438e-05,0.000941829772526,0.00108150731902,,1.24159188033e-144,,coefficient,0.00101166854577,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Sunlight_Hours,1658,0.000815523234862,0.0132538100143,-0.0251807349954,0.0268117814652,,0.950943673082,,coefficient,0.000815523234862,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Wind_Speed,1658,-0.0504211049167,0.00551361839353,-0.0612356139059,-0.0396065959274,,1.72435784615e-19,,coefficient,-0.0504211049167,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Altitude,1658,5.14017424645e-05,4.17595612702e-05,-3.05062022842e-05,0.000133309687213,,0.21853843221,,coefficient,5.14017424645e-05,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Fertilizer_Used,1658,0.0102868265132,0.000309430546691,0.00967990394626,0.0108937490802,,1.60830658568e-185,,coefficient,0.0102868265132,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Pesticide_Used,1658,0.00241140019369,0.0037799591992,-0.00500267887762,0.00982547926501,,0.52359993752,,coefficient,0.00241140019369,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Soil_Type_Loamy,1658,-0.0755520123548,0.0769654611146,-0.226513433998,0.0754094092879,,0.326424965789,,coefficient,-0.0755520123548,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Soil_Type_Sandy,1658,-0.0225548977042,0.0780464982938,-0.17563668486,0.130526889451,,0.772623356679,,coefficient,-0.0225548977042,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Soil_Type_Silt,1658,-0.055771352896,0.0744726778604,-0.201843385215,0.0903006794227,,0.454035332664,,coefficient,-0.055771352896,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Region_East,1658,-0.0732172906296,0.0874202351193,-0.244684891588,0.0982503103286,,0.40241585744,,coefficient,-0.0732172906296,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Region_North,1658,-0.013557462236,0.0834319282389,-0.177202327283,0.150087402811,,0.870934366607,,coefficient,-0.013557462236,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Region_South,1658,-0.174308505745,0.082869768148,-0.33685074001,-0.0117662714792,,0.0355831982992,,coefficient,-0.174308505745,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Region_West,1658,-0.0895931227696,0.0845212476922,-0.255374598328,0.0761883527893,,0.289298123023,,coefficient,-0.0895931227696,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Irrigation_Type_Drip,1658,0.154329253664,0.0732393946963,0.0106762048357,0.297982302493,,0.0352533276107,,coefficient,0.154329253664,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Irrigation_Type_Rainfed,1658,0.0791300951837,0.0733103745894,-0.0646621748672,0.222922365235,,0.280575674966,,coefficient,0.0791300951837,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Maize,Irrigation_Type_Sprinkler,1658,0.0563068849006,0.0769225266623,-0.0945703243454,0.207184094147,,0.464276814252,,coefficient,0.0563068849006,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4,Numerical OLS,Potato,,1670,0.580942560415,,,,,,,R2,0.580942560415,PARTIALLY_COMPLETED,
+A4,Numerical OLS,Potato,,1670,0.577397663645,,,,,,,adjusted_R2,0.577397663645,PARTIALLY_COMPLETED,14 numeric non-target predictors plus intercept.
+A4,Numerical OLS HC3 RESET power 2,Potato,,1670,,,,,0.127029311744,0.721577714254,,RESET_F,0.127029311744,PARTIALLY_COMPLETED,df=1.0; HC3 covariance.
+A4,Cook distance,Potato,,1670,76,,,,,,,flagged_count_4_over_n,76,PARTIALLY_COMPLETED,Threshold Cook's D > 4/n = 0.0023952096; flagged rows retained in primary fit.
+A4,Cook distance,Potato,,1670,0.00866612877115,,,,,,,max_Cook_distance,0.00866612877115,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS conventional,Potato,const,1670,19.0879929427,0.307859523394,18.4841577623,19.691828123,,0,,coefficient,19.0879929427,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,const,1670,19.0879929427,0.305676857198,18.4884388403,19.687547045,,0,,coefficient,19.0879929427,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,N,1670,0.00412469551972,0.000617138890057,0.00291424028072,0.00533515075871,,3.17697998504e-11,,coefficient,0.00412469551972,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,N,1670,0.00412469551972,0.000630874213615,0.0028872998389,0.00536209120053,,8.27869764889e-11,,coefficient,0.00412469551972,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,P,1670,0.00623572872575,0.0010810818524,0.00411529649712,0.00835616095438,,9.55174710351e-09,,coefficient,0.00623572872575,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,P,1670,0.00623572872575,0.00106997013842,0.00413709099528,0.00833436645623,,6.73112494017e-09,,coefficient,0.00623572872575,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,K,1670,0.00652636522721,0.000726476545374,0.00510145528469,0.00795127516973,,6.95991521043e-19,,coefficient,0.00652636522721,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,K,1670,0.00652636522721,0.000723985658783,0.0051063409057,0.00794638954873,,5.32175937903e-19,,coefficient,0.00652636522721,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Soil_pH,1670,0.0237882729257,0.0275169929609,-0.0301835133735,0.0777600592249,,0.387441902118,,coefficient,0.0237882729257,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Soil_pH,1670,0.0237882729257,0.0281095699321,-0.0313457929039,0.0789223387552,,0.397524736948,,coefficient,0.0237882729257,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Soil_Moisture,1670,0.032830167555,0.0018484602421,0.0292046005713,0.0364557345386,,9.81733784823e-65,,coefficient,0.032830167555,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Soil_Moisture,1670,0.032830167555,0.00183341317663,0.0292341138616,0.0364262212483,,1.10168431812e-65,,coefficient,0.032830167555,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Organic_Carbon,1670,-0.0116437026453,0.0718545965593,-0.152579194238,0.129291788948,,0.871289928879,,coefficient,-0.0116437026453,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Organic_Carbon,1670,-0.0116437026453,0.0716198590532,-0.152118780467,0.128831375176,,0.870871775211,,coefficient,-0.0116437026453,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Temperature,1670,-0.00293271989087,0.00305672592428,-0.00892817726495,0.0030627374832,,0.337481428911,,coefficient,-0.00293271989087,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Temperature,1670,-0.00293271989087,0.00307363694756,-0.00896134651916,0.00309590673741,,0.340145543501,,coefficient,-0.00293271989087,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Humidity,1670,0.000708063334445,0.00153413196404,-0.00230098066377,0.00371710733266,,0.644471853138,,coefficient,0.000708063334445,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Humidity,1670,0.000708063334445,0.00157402528132,-0.00237922735293,0.00379535402182,,0.652882982538,,coefficient,0.000708063334445,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Rainfall,1670,0.00103637486302,3.73868082966e-05,0.00096304443659,0.00110970528944,,3.03653960077e-139,,coefficient,0.00103637486302,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Rainfall,1670,0.00103637486302,3.68689329378e-05,0.000964060196496,0.00110868952954,,1.85756346969e-142,,coefficient,0.00103637486302,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Sunlight_Hours,1670,-0.0177509327348,0.013626740284,-0.0444783994898,0.00897653402014,,0.192874017697,,coefficient,-0.0177509327348,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Sunlight_Hours,1670,-0.0177509327348,0.0135837801987,-0.0443941376467,0.00889227217703,,0.191470978355,,coefficient,-0.0177509327348,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Wind_Speed,1670,-0.0509325901052,0.00543484580842,-0.0615924880438,-0.0402726921666,,2.26137561763e-20,,coefficient,-0.0509325901052,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Wind_Speed,1670,-0.0509325901052,0.00550169506255,-0.0617236060647,-0.0401415741457,,6.2659760491e-20,,coefficient,-0.0509325901052,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Altitude,1670,4.90780592706e-05,4.21565075111e-05,-3.3607647621e-05,0.000131763766162,,0.244516020626,,coefficient,4.90780592706e-05,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Altitude,1670,4.90780592706e-05,4.241759927e-05,-3.41197525824e-05,0.000132275871124,,0.24743068925,,coefficient,4.90780592706e-05,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Fertilizer_Used,1670,0.00988623208147,0.000327727810175,0.00924342727499,0.0105290368879,,1.13355831447e-159,,coefficient,0.00988623208147,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Fertilizer_Used,1670,0.00988623208147,0.000322919964281,0.0092528573763,0.0105196067866,,1.76094813647e-163,,coefficient,0.00988623208147,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Potato,Pesticide_Used,1670,0.00178571546048,0.00365668966796,-0.00538650984778,0.00895794076875,,0.625372250708,,coefficient,0.00178571546048,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Potato,Pesticide_Used,1670,0.00178571546048,0.00370147119509,-0.00547434426398,0.00904577518494,,0.629561489934,,coefficient,0.00178571546048,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_SENS,Exclude primary-fit Cook flags,Potato,,1594,,,,,,,,adjusted_R2,0.636515472184,PARTIALLY_COMPLETED,Sensitivity only: excluded 76 of 1670 flagged rows; primary analysis retains all observations.
+A4_SENS,Exclude primary-fit Cook flags,Potato,,1594,,,,,,,,numeric_slope_sign_flips,1,PARTIALLY_COMPLETED,Compared all 14 numeric slopes with primary fit.
+A4_SENS,Exclude primary-fit Cook flags,Potato,,1594,,,,,,,,HC3_p05_status_changes,1,PARTIALLY_COMPLETED,"Count among 14 numeric slopes, full-sample vs sensitivity fit."
+A4_EXT,Extended OLS,Potato,,1670,0.583542511701,,,,,,,R2,0.583542511701,PARTIALLY_COMPLETED,
+A4_EXT,Extended OLS,Potato,,1670,0.577466536188,,,,,,,adjusted_R2,0.577466536188,PARTIALLY_COMPLETED,"Adds one-hot Soil_Type, Region, Irrigation_Type; Crop_Type is constant within crop."
+A4_EXT,Extended OLS HC3 RESET power 2,Potato,,1670,,,,,0.144968056264,0.703440397727,,RESET_F,0.144968056264,PARTIALLY_COMPLETED,HC3 covariance.
+A4_EXT_COEF,Extended OLS HC3,Potato,const,1670,18.9616185807,0.317552268305,18.3387692949,19.5844678666,,0,,coefficient,18.9616185807,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,N,1670,0.00404574165608,0.00063832875632,0.00279371907684,0.00529776423533,,2.99810168149e-10,,coefficient,0.00404574165608,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,P,1670,0.00636168450753,0.00107628019139,0.0042506608573,0.00847270815776,,4.13035203001e-09,,coefficient,0.00636168450753,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,K,1670,0.00649088876113,0.000726754847564,0.0050654266153,0.00791635090695,,1.09972823479e-18,,coefficient,0.00649088876113,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Soil_pH,1670,0.0194879593577,0.0281675206211,-0.0357600166574,0.0747359353729,,0.489123367372,,coefficient,0.0194879593577,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Soil_Moisture,1670,0.0326205884419,0.00185258294523,0.0289869190288,0.0362542578551,,1.02761089767e-63,,coefficient,0.0326205884419,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Organic_Carbon,1670,-0.00888556379296,0.0720279149174,-0.150161630271,0.132390502685,,0.901834899699,,coefficient,-0.00888556379296,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Temperature,1670,-0.00338645852842,0.00308632615317,-0.00944000067645,0.00266708361961,,0.272694529074,,coefficient,-0.00338645852842,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Humidity,1670,0.000654847805374,0.00157967196804,-0.00244353206896,0.00375322767971,,0.678527822752,,coefficient,0.000654847805374,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Rainfall,1670,0.00103596292898,3.73245988623e-05,0.000962754194333,0.00110917166362,,2.15815663812e-139,,coefficient,0.00103596292898,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Sunlight_Hours,1670,-0.0169505835718,0.0136813674135,-0.0437853152788,0.0098841481352,,0.215539317618,,coefficient,-0.0169505835718,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Wind_Speed,1670,-0.0509322077509,0.00552525005225,-0.0617694726444,-0.0400949428574,,8.96003722545e-20,,coefficient,-0.0509322077509,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Altitude,1670,4.87552569059e-05,4.27887357119e-05,-3.51708747594e-05,0.000132681388571,,0.254684986547,,coefficient,4.87552569059e-05,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Fertilizer_Used,1670,0.00986679558192,0.000324599214547,0.00923012436542,0.0105034667984,,1.9283380714e-161,,coefficient,0.00986679558192,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Pesticide_Used,1670,0.00194051909395,0.00375357898845,-0.00542177752827,0.00930281571618,,0.605240766771,,coefficient,0.00194051909395,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Soil_Type_Loamy,1670,0.160308947966,0.0760455339681,0.0111526948034,0.309465201129,,0.035176257277,,coefficient,0.160308947966,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Soil_Type_Sandy,1670,0.0798815481027,0.0757577925959,-0.0687103270788,0.228473423284,,0.291839373225,,coefficient,0.0798815481027,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Soil_Type_Silt,1670,0.199697552033,0.0765373737771,0.0495766007581,0.349818503308,,0.00915900197587,,coefficient,0.199697552033,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Region_East,1670,0.0641005368492,0.0870769014259,-0.106692719191,0.234893792889,,0.461752228025,,coefficient,0.0641005368492,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Region_North,1670,0.0848771545666,0.0862279378364,-0.0842509382289,0.254005247362,,0.325095705869,,coefficient,0.0848771545666,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Region_South,1670,0.0459014020987,0.0876342371428,-0.125985016195,0.217787820392,,0.600499412689,,coefficient,0.0459014020987,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Region_West,1670,0.0120378136773,0.0835576713521,-0.151852799375,0.175928426729,,0.88546605393,,coefficient,0.0120378136773,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Irrigation_Type_Drip,1670,-0.00109219071043,0.0794961169035,-0.157016441874,0.154832060453,,0.989039939505,,coefficient,-0.00109219071043,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Irrigation_Type_Rainfed,1670,0.0609000135296,0.0756108477144,-0.0874036429123,0.209203669971,,0.420682127777,,coefficient,0.0609000135296,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Potato,Irrigation_Type_Sprinkler,1670,0.0338075140871,0.0750978350639,-0.11348991568,0.181104943854,,0.652640256868,,coefficient,0.0338075140871,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4,Numerical OLS,Rice,,1702,0.571315143925,,,,,,,R2,0.571315143925,PARTIALLY_COMPLETED,
+A4,Numerical OLS,Rice,,1702,0.567757593252,,,,,,,adjusted_R2,0.567757593252,PARTIALLY_COMPLETED,14 numeric non-target predictors plus intercept.
+A4,Numerical OLS HC3 RESET power 2,Rice,,1702,,,,,0.780404182431,0.377143499544,,RESET_F,0.780404182431,PARTIALLY_COMPLETED,df=1.0; HC3 covariance.
+A4,Cook distance,Rice,,1702,82,,,,,,,flagged_count_4_over_n,82,PARTIALLY_COMPLETED,Threshold Cook's D > 4/n = 0.0023501763; flagged rows retained in primary fit.
+A4,Cook distance,Rice,,1702,0.00651493736313,,,,,,,max_Cook_distance,0.00651493736313,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS conventional,Rice,const,1702,3.89041736559,0.303178815388,3.29577117354,4.48506355764,,4.94737625121e-36,,coefficient,3.89041736559,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,const,1702,3.89041736559,0.294468981914,3.31285438993,4.46798034125,,5.40288569981e-38,,coefficient,3.89041736559,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,N,1702,0.0058227798103,0.000616629666045,0.00461334015222,0.00703221946839,,1.16112762245e-20,,coefficient,0.0058227798103,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,N,1702,0.0058227798103,0.000619868177365,0.00460698822944,0.00703857139117,,1.81428437334e-20,,coefficient,0.0058227798103,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,P,1702,0.00457969154328,0.00110582410684,0.00241076000573,0.00674862308082,,3.62214150959e-05,,coefficient,0.00457969154328,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,P,1702,0.00457969154328,0.00110508541794,0.00241220884885,0.00674717423771,,3.57910368567e-05,,coefficient,0.00457969154328,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,K,1702,0.00477975614868,0.00070439217496,0.00339818163459,0.00616133066277,,1.59458314662e-11,,coefficient,0.00477975614868,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,K,1702,0.00477975614868,0.000715006705721,0.00337736259983,0.00618214969753,,3.13081767685e-11,,coefficient,0.00477975614868,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Soil_pH,1702,-0.0222453770009,0.0272675357035,-0.075727135784,0.0312363817823,,0.414718765722,,coefficient,-0.0222453770009,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Soil_pH,1702,-0.0222453770009,0.0279043401965,-0.0769761457663,0.0324853917646,,0.425446300933,,coefficient,-0.0222453770009,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Soil_Moisture,1702,0.0255609575625,0.00184772819371,0.0219368767278,0.0291850383972,,2.62329970289e-41,,coefficient,0.0255609575625,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Soil_Moisture,1702,0.0255609575625,0.00185235398927,0.0219278038257,0.0291941112994,,4.03675373169e-41,,coefficient,0.0255609575625,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Organic_Carbon,1702,0.00801955162737,0.0701540565985,-0.129578593414,0.145617696669,,0.909002930642,,coefficient,0.00801955162737,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Organic_Carbon,1702,0.00801955162737,0.0704665192329,-0.130191448621,0.146230551876,,0.909404685916,,coefficient,0.00801955162737,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Temperature,1702,0.00187966878245,0.00302199834901,-0.00404759169691,0.00780692926181,,0.534029005384,,coefficient,0.00187966878245,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Temperature,1702,0.00187966878245,0.00299391056334,-0.00399250112348,0.00775183868838,,0.530199866261,,coefficient,0.00187966878245,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Humidity,1702,-6.61510445605e-05,0.00152868568772,-0.0030644711016,0.00293216901248,,0.965488915655,,coefficient,-6.61510445605e-05,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Humidity,1702,-6.61510445605e-05,0.0015367345797,-0.00308025796639,0.00294795587727,,0.965669560972,,coefficient,-6.61510445605e-05,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Rainfall,1702,0.000993356104549,3.74788343989e-05,0.000919846198755,0.00106686601034,,1.05985081989e-129,,coefficient,0.000993356104549,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Rainfall,1702,0.000993356104549,3.69019021943e-05,0.000920977776956,0.00106573443214,,4.38854698068e-133,,coefficient,0.000993356104549,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Sunlight_Hours,1702,0.0043641532854,0.0129832627684,-0.0211008441807,0.0298291507515,,0.736809459922,,coefficient,0.0043641532854,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Sunlight_Hours,1702,0.0043641532854,0.0129249599843,-0.0209864907801,0.0297147973509,,0.735666601872,,coefficient,0.0043641532854,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Wind_Speed,1702,-0.0456179354217,0.00535433866146,-0.0561197809808,-0.0351160898626,,3.48653422168e-17,,coefficient,-0.0456179354217,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Wind_Speed,1702,-0.0456179354217,0.0053199416736,-0.05605231572,-0.0351835551234,,2.20692150443e-17,,coefficient,-0.0456179354217,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Altitude,1702,4.10518166935e-05,4.15630198578e-05,-4.04686927689e-05,0.000122572326156,,0.323440972362,,coefficient,4.10518166935e-05,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Altitude,1702,4.10518166935e-05,4.07964032718e-05,-3.8965073088e-05,0.000121068706475,,0.314434493485,,coefficient,4.10518166935e-05,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Fertilizer_Used,1702,0.0103999183944,0.000318498742254,0.00977522413922,0.0110246126495,,1.14935825443e-181,,coefficient,0.0103999183944,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Fertilizer_Used,1702,0.0103999183944,0.000315636293897,0.00978083846294,0.0110189983258,,3.0366161722e-184,,coefficient,0.0103999183944,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Rice,Pesticide_Used,1702,-0.00347962754173,0.00367845665375,-0.0106944464234,0.00373519133994,,0.3443107381,,coefficient,-0.00347962754173,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Rice,Pesticide_Used,1702,-0.00347962754173,0.00364998421022,-0.0106386013931,0.00367934630966,,0.340561120157,,coefficient,-0.00347962754173,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_SENS,Exclude primary-fit Cook flags,Rice,,1620,,,,,,,,adjusted_R2,0.631242433348,PARTIALLY_COMPLETED,Sensitivity only: excluded 82 of 1702 flagged rows; primary analysis retains all observations.
+A4_SENS,Exclude primary-fit Cook flags,Rice,,1620,,,,,,,,numeric_slope_sign_flips,2,PARTIALLY_COMPLETED,Compared all 14 numeric slopes with primary fit.
+A4_SENS,Exclude primary-fit Cook flags,Rice,,1620,,,,,,,,HC3_p05_status_changes,0,PARTIALLY_COMPLETED,"Count among 14 numeric slopes, full-sample vs sensitivity fit."
+A4_EXT,Extended OLS,Rice,,1702,0.57276963127,,,,,,,R2,0.57276963127,PARTIALLY_COMPLETED,
+A4_EXT,Extended OLS,Rice,,1702,0.566655422058,,,,,,,adjusted_R2,0.566655422058,PARTIALLY_COMPLETED,"Adds one-hot Soil_Type, Region, Irrigation_Type; Crop_Type is constant within crop."
+A4_EXT,Extended OLS HC3 RESET power 2,Rice,,1702,,,,,0.585055022174,0.444445391439,,RESET_F,0.585055022174,PARTIALLY_COMPLETED,HC3 covariance.
+A4_EXT_COEF,Extended OLS HC3,Rice,const,1702,3.95260390407,0.31321925816,3.33826204675,4.56694576139,,6.06342774796e-35,,coefficient,3.95260390407,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,N,1702,0.00576924008123,0.000625502516444,0.00454239221764,0.00699608794483,,8.37955515994e-20,,coefficient,0.00576924008123,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,P,1702,0.00466560757773,0.00112267206015,0.00246362152284,0.00686759363262,,3.40483982061e-05,,coefficient,0.00466560757773,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,K,1702,0.0048411994716,0.00072193663557,0.00342520769584,0.00625719124736,,2.72809382081e-11,,coefficient,0.0048411994716,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Soil_pH,1702,-0.021708911684,0.0280516551203,-0.0767288552491,0.0333110318811,,0.439104580113,,coefficient,-0.021708911684,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Soil_Moisture,1702,0.025545293258,0.00188055332528,0.0218568143649,0.0292337721512,,5.96367948028e-40,,coefficient,0.025545293258,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Organic_Carbon,1702,0.0111833568219,0.070675677131,-0.127438473174,0.149805186817,,0.874290775987,,coefficient,0.0111833568219,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Temperature,1702,0.00211663587749,0.00302272376837,-0.0038120728007,0.00804534455567,,0.483873783409,,coefficient,0.00211663587749,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Humidity,1702,-0.00013707022451,0.00154964555862,-0.00317651338093,0.00290237293191,,0.929527493998,,coefficient,-0.00013707022451,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Rainfall,1702,0.000996862028987,3.71772853635e-05,0.000923943260599,0.00106978079737,,4.21917151602e-132,,coefficient,0.000996862028987,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Sunlight_Hours,1702,0.00474935006375,0.0129587575101,-0.0206676923113,0.0301663924388,,0.714040235298,,coefficient,0.00474935006375,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Wind_Speed,1702,-0.0457231536146,0.00535438636955,-0.0562251377084,-0.0352211695207,,2.97804370109e-17,,coefficient,-0.0457231536146,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Altitude,1702,4.06814194066e-05,4.08784709276e-05,-3.94967787718e-05,0.000120859617585,,0.319792502192,,coefficient,4.06814194066e-05,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Fertilizer_Used,1702,0.0104095971164,0.00031965095899,0.00978264025242,0.0110365539804,,1.10404293316e-180,,coefficient,0.0104095971164,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Pesticide_Used,1702,-0.00382792667634,0.00366761621519,-0.0110215142316,0.00336566087894,,0.296770139277,,coefficient,-0.00382792667634,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Soil_Type_Loamy,1702,-0.0581349442468,0.0740731758509,-0.203420558858,0.0871506703643,,0.432663359594,,coefficient,-0.0581349442468,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Soil_Type_Sandy,1702,-0.0749825669218,0.0756386288248,-0.223338629031,0.0733734951873,,0.321669253126,,coefficient,-0.0749825669218,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Soil_Type_Silt,1702,-0.0534997337484,0.0787183867086,-0.207896370085,0.100896902588,,0.496829697775,,coefficient,-0.0534997337484,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Region_East,1702,-0.0178793431706,0.0859700324991,-0.186499209489,0.150740523148,,0.835276232442,,coefficient,-0.0178793431706,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Region_North,1702,0.0539344477733,0.0830811046503,-0.109019134452,0.216888029998,,0.516312050683,,coefficient,0.0539344477733,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Region_South,1702,0.059999340007,0.086232759187,-0.109135833073,0.229134513087,,0.486660767095,,coefficient,0.059999340007,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Region_West,1702,-0.0813674988857,0.0829186424883,-0.244002431144,0.0812674333723,,0.326589725116,,coefficient,-0.0813674988857,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Irrigation_Type_Drip,1702,-0.0264916759401,0.0771894671717,-0.177889520716,0.124906168836,,0.731488577923,,coefficient,-0.0264916759401,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Irrigation_Type_Rainfed,1702,-0.0537470831312,0.0745155753927,-0.19990041117,0.0924062449079,,0.470833765936,,coefficient,-0.0537470831312,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Rice,Irrigation_Type_Sprinkler,1702,-0.0595494914864,0.0739380842121,-0.204570140116,0.0854711571427,,0.420704953278,,coefficient,-0.0595494914864,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4,Numerical OLS,Sugarcane,,1633,0.574861318247,,,,,,,R2,0.574861318247,PARTIALLY_COMPLETED,
+A4,Numerical OLS,Sugarcane,,1633,0.571182738801,,,,,,,adjusted_R2,0.571182738801,PARTIALLY_COMPLETED,14 numeric non-target predictors plus intercept.
+A4,Numerical OLS HC3 RESET power 2,Sugarcane,,1633,,,,,0.230809870077,0.630988958386,,RESET_F,0.230809870077,PARTIALLY_COMPLETED,df=1.0; HC3 covariance.
+A4,Cook distance,Sugarcane,,1633,84,,,,,,,flagged_count_4_over_n,84,PARTIALLY_COMPLETED,Threshold Cook's D > 4/n = 0.0024494795; flagged rows retained in primary fit.
+A4,Cook distance,Sugarcane,,1633,0.00753023418759,,,,,,,max_Cook_distance,0.00753023418759,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS conventional,Sugarcane,const,1633,69.2252578938,0.298399238521,68.6399683059,69.8105474817,,0,,coefficient,69.2252578938,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,const,1633,69.2252578938,0.313652757364,68.6100495775,69.8404662101,,0,,coefficient,69.2252578938,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,N,1633,0.00601001901337,0.000610116731585,0.004813316997,0.00720672102973,,2.84176791272e-22,,coefficient,0.00601001901337,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,N,1633,0.00601001901337,0.000622096435626,0.00478981963127,0.00723021839546,,1.66129722258e-21,,coefficient,0.00601001901337,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,P,1633,0.00655937719289,0.00107182717097,0.00445706189766,0.00866169248813,,1.17298493732e-09,,coefficient,0.00655937719289,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,P,1633,0.00655937719289,0.00110535856506,0.00439129237383,0.00872746201196,,3.60562396982e-09,,coefficient,0.00655937719289,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,K,1633,0.00571716932872,0.000714626665726,0.00431547826282,0.00711886039463,,2.34599830592e-15,,coefficient,0.00571716932872,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,K,1633,0.00571716932872,0.000684047255308,0.00437545767366,0.00705888098378,,1.35739114448e-16,,coefficient,0.00571716932872,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Soil_pH,1633,-0.0120239862019,0.0273375460406,-0.0656447029853,0.0415967305816,,0.66011597713,,coefficient,-0.0120239862019,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Soil_pH,1633,-0.0120239862019,0.0289415523174,-0.0687908510032,0.0447428785995,,0.677862078521,,coefficient,-0.0120239862019,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Soil_Moisture,1633,0.0282684602268,0.00184446896822,0.0246506611744,0.0318862592792,,1.31103435321e-49,,coefficient,0.0282684602268,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Soil_Moisture,1633,0.0282684602268,0.00186883058555,0.0246028775371,0.0319340429164,,1.89710542135e-48,,coefficient,0.0282684602268,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Organic_Carbon,1633,-0.0525431676722,0.0709735202084,-0.191752847304,0.0866665119593,,0.45921282128,,coefficient,-0.0525431676722,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Organic_Carbon,1633,-0.0525431676722,0.0700202318887,-0.189883037814,0.0847967024699,,0.453123061007,,coefficient,-0.0525431676722,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Temperature,1633,-0.000839371986515,0.00306165384474,-0.00684459547856,0.00516585150553,,0.783999430893,,coefficient,-0.000839371986515,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Temperature,1633,-0.000839371986515,0.00307528080243,-0.00687132381906,0.00519257984603,,0.784932957841,,coefficient,-0.000839371986515,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Humidity,1633,-0.000105381959282,0.00153111707077,-0.00310856281144,0.00289779889287,,0.945135953019,,coefficient,-0.000105381959282,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Humidity,1633,-0.000105381959282,0.001594869751,-0.00323360930997,0.0030228453914,,0.94732580803,,coefficient,-0.000105381959282,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Rainfall,1633,0.00100129208985,3.71241228486e-05,0.000928475675596,0.0010741085041,,1.25930208742e-132,,coefficient,0.00100129208985,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Rainfall,1633,0.00100129208985,3.7211143349e-05,0.000928304990868,0.00107427918883,,4.07639585411e-132,,coefficient,0.00100129208985,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Sunlight_Hours,1633,0.00275467163355,0.0131718772699,-0.0230810599112,0.0285904031782,,0.834370892476,,coefficient,0.00275467163355,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Sunlight_Hours,1633,0.00275467163355,0.0130874800742,-0.0229155206151,0.0284248638822,,0.833318439543,,coefficient,0.00275467163355,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Wind_Speed,1633,-0.0530678919381,0.00549916894635,-0.0638541336944,-0.0422816501818,,1.83443668166e-21,,coefficient,-0.0530678919381,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Wind_Speed,1633,-0.0530678919381,0.00553180523465,-0.0639181475297,-0.0422176363464,,3.09678303245e-21,,coefficient,-0.0530678919381,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Altitude,1633,4.74172441429e-05,4.24693254144e-05,-3.5883417396e-05,0.000130717905682,,0.264371505246,,coefficient,4.74172441429e-05,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Altitude,1633,4.74172441429e-05,4.17037949057e-05,-3.43818819424e-05,0.000129216370228,,0.255706348033,,coefficient,4.74172441429e-05,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Fertilizer_Used,1633,0.00976525149962,0.000318770572489,0.00914000494087,0.0103904980584,,6.30654499061e-163,,coefficient,0.00976525149962,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Fertilizer_Used,1633,0.00976525149962,0.000314145586549,0.00914907653277,0.0103814264665,,9.7920813589e-167,,coefficient,0.00976525149962,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Sugarcane,Pesticide_Used,1633,0.000185683140323,0.00368089577888,-0.00703414082543,0.00740550710608,,0.959773927243,,coefficient,0.000185683140323,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Sugarcane,Pesticide_Used,1633,0.000185683140323,0.00363698013108,-0.00694800330198,0.00731936958263,,0.959288626838,,coefficient,0.000185683140323,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_SENS,Exclude primary-fit Cook flags,Sugarcane,,1549,,,,,,,,adjusted_R2,0.636040463702,PARTIALLY_COMPLETED,Sensitivity only: excluded 84 of 1633 flagged rows; primary analysis retains all observations.
+A4_SENS,Exclude primary-fit Cook flags,Sugarcane,,1549,,,,,,,,numeric_slope_sign_flips,3,PARTIALLY_COMPLETED,Compared all 14 numeric slopes with primary fit.
+A4_SENS,Exclude primary-fit Cook flags,Sugarcane,,1549,,,,,,,,HC3_p05_status_changes,1,PARTIALLY_COMPLETED,"Count among 14 numeric slopes, full-sample vs sensitivity fit."
+A4_EXT,Extended OLS,Sugarcane,,1633,0.575681716796,,,,,,,R2,0.575681716796,PARTIALLY_COMPLETED,
+A4_EXT,Extended OLS,Sugarcane,,1633,0.569348608092,,,,,,,adjusted_R2,0.569348608092,PARTIALLY_COMPLETED,"Adds one-hot Soil_Type, Region, Irrigation_Type; Crop_Type is constant within crop."
+A4_EXT,Extended OLS HC3 RESET power 2,Sugarcane,,1633,,,,,0.110838165379,0.739235333374,,RESET_F,0.110838165379,PARTIALLY_COMPLETED,HC3 covariance.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,const,1633,69.2453294637,0.329703846296,68.5986350295,69.8920238979,,0,,coefficient,69.2453294637,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,N,1633,0.00603473998654,0.000625845944199,0.00480718048631,0.00726229948677,,1.98371631806e-21,,coefficient,0.00603473998654,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,P,1633,0.00646582342166,0.00111480734909,0.0042791952826,0.00865245156072,,7.97164989429e-09,,coefficient,0.00646582342166,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,K,1633,0.00570636769758,0.000694529291548,0.00434408990712,0.00706864548803,,4.27233138902e-16,,coefficient,0.00570636769758,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Soil_pH,1633,-0.0135406215608,0.0291025798522,-0.0706235965483,0.0435423534267,,0.64179953768,,coefficient,-0.0135406215608,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Soil_Moisture,1633,0.0283614099883,0.001893563483,0.0246472981299,0.0320755218466,,1.4159306829e-47,,coefficient,0.0283614099883,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Organic_Carbon,1633,-0.0503271919493,0.0707939042637,-0.189185213708,0.0885308298095,,0.477251008108,,coefficient,-0.0503271919493,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Temperature,1633,-0.00073596210316,0.00308377500805,-0.00678460289535,0.00531267868903,,0.811402573383,,coefficient,-0.00073596210316,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Humidity,1633,-0.000144022183014,0.00160574577438,-0.00329359676853,0.0030055524025,,0.928543324817,,coefficient,-0.000144022183014,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Rainfall,1633,0.0010021069537,3.74427341732e-05,0.000928665263337,0.00107554864406,,8.11453293287e-131,,coefficient,0.0010021069537,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Sunlight_Hours,1633,0.00260900130801,0.0132219206437,-0.0233250076088,0.0285430102248,,0.84359899481,,coefficient,0.00260900130801,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Wind_Speed,1633,-0.0531151086681,0.00557929369232,-0.0640585605512,-0.042171656785,,6.09237131905e-21,,coefficient,-0.0531151086681,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Altitude,1633,4.87270748083e-05,4.2054922223e-05,-3.37611473888e-05,0.000131215297005,,0.246769572103,,coefficient,4.87270748083e-05,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Fertilizer_Used,1633,0.00975160412585,0.000316115529627,0.00913156236452,0.0103716458872,,1.56653491779e-164,,coefficient,0.00975160412585,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Pesticide_Used,1633,0.000150253297319,0.00368062080783,-0.0070690649411,0.00736957153574,,0.967442219719,,coefficient,0.000150253297319,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Soil_Type_Loamy,1633,-0.0559623856671,0.0762174931858,-0.205458453687,0.0935336823527,,0.46290590315,,coefficient,-0.0559623856671,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Soil_Type_Sandy,1633,-0.00326288932667,0.0795183804516,-0.159233450886,0.152707672232,,0.967274565312,,coefficient,-0.00326288932667,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Soil_Type_Silt,1633,-0.042594513587,0.0747235586648,-0.189160318128,0.103971290953,,0.568738402602,,coefficient,-0.042594513587,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Region_East,1633,-0.0228544924758,0.0871223886846,-0.193739862756,0.148030877804,,0.793103501265,,coefficient,-0.0228544924758,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Region_North,1633,0.0160442092635,0.0890954752997,-0.158711252756,0.190799671283,,0.857113369668,,coefficient,0.0160442092635,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Region_South,1633,0.0565690510327,0.0854299344064,-0.110996671102,0.224134773167,,0.507957828999,,coefficient,0.0565690510327,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Region_West,1633,-0.0527844079831,0.0809598283293,-0.211582283601,0.106013467634,,0.514505507173,,coefficient,-0.0527844079831,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Irrigation_Type_Drip,1633,0.00437660395399,0.0733473672077,-0.139489883106,0.148243091014,,0.952426243399,,coefficient,0.00437660395399,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Irrigation_Type_Rainfed,1633,0.0275466092501,0.078070235661,-0.125583502655,0.180676721156,,0.724251688087,,coefficient,0.0275466092501,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Sugarcane,Irrigation_Type_Sprinkler,1633,0.0377821217574,0.0771677484632,-0.113577815325,0.18914205884,,0.624476495377,,coefficient,0.0377821217574,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4,Numerical OLS,Wheat,,1671,0.565166448871,,,,,,,R2,0.565166448871,PARTIALLY_COMPLETED,
+A4,Numerical OLS,Wheat,,1671,0.561490319816,,,,,,,adjusted_R2,0.561490319816,PARTIALLY_COMPLETED,14 numeric non-target predictors plus intercept.
+A4,Numerical OLS HC3 RESET power 2,Wheat,,1671,,,,,0.584234865183,0.444766122485,,RESET_F,0.584234865183,PARTIALLY_COMPLETED,df=1.0; HC3 covariance.
+A4,Cook distance,Wheat,,1671,78,,,,,,,flagged_count_4_over_n,78,PARTIALLY_COMPLETED,Threshold Cook's D > 4/n = 0.0023937762; flagged rows retained in primary fit.
+A4,Cook distance,Wheat,,1671,0.00901549396119,,,,,,,max_Cook_distance,0.00901549396119,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS conventional,Wheat,const,1671,3.18130176018,0.30366323871,2.58569742919,3.77690609118,,6.53472778072e-25,,coefficient,3.18130176018,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,const,1671,3.18130176018,0.313872543834,2.56567292318,3.79693059719,,1.82696043535e-23,,coefficient,3.18130176018,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,N,1671,0.00533478218957,0.000627273680983,0.00410444913147,0.00656511524766,,4.00628082646e-17,,coefficient,0.00533478218957,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,N,1671,0.00533478218957,0.000634367254116,0.00409053581454,0.00657902856459,,8.75242622095e-17,,coefficient,0.00533478218957,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,P,1671,0.00348436837429,0.00109771443486,0.00133131397636,0.00563742277223,,0.00153010504522,,coefficient,0.00348436837429,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,P,1671,0.00348436837429,0.00108047227214,0.00136513271198,0.00560360403661,,0.00128492700021,,coefficient,0.00348436837429,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,K,1671,0.00432505362481,0.000716230730962,0.00292024042726,0.00572986682237,,1.91479509398e-09,,coefficient,0.00432505362481,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,K,1671,0.00432505362481,0.000727543357401,0.00289805186953,0.0057520553801,,3.3697222882e-09,,coefficient,0.00432505362481,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Soil_pH,1671,-0.0342306633288,0.0273755227777,-0.0879249465055,0.0194636198479,,0.211325989257,,coefficient,-0.0342306633288,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Soil_pH,1671,-0.0342306633288,0.0281410368844,-0.0894264239952,0.0209650973375,,0.224007201076,,coefficient,-0.0342306633288,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Soil_Moisture,1671,0.0319918977338,0.00187104643263,0.0283220318537,0.0356617636138,,1.73574021386e-60,,coefficient,0.0319918977338,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Soil_Moisture,1671,0.0319918977338,0.00184869667121,0.0283658686209,0.0356179268466,,8.41285055082e-62,,coefficient,0.0319918977338,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Organic_Carbon,1671,0.122376811007,0.0716340137257,-0.0181259676726,0.262879589686,,0.0877566341354,,coefficient,0.122376811007,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Organic_Carbon,1671,0.122376811007,0.071140012245,-0.0171570343812,0.261910656395,,0.085578415198,,coefficient,0.122376811007,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Temperature,1671,0.00432473662796,0.0030639290442,-0.00168484627821,0.0103343195341,,0.158285013702,,coefficient,0.00432473662796,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Temperature,1671,0.00432473662796,0.00304250978959,-0.00164283460481,0.0102923078607,,0.155377982224,,coefficient,0.00432473662796,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Humidity,1671,0.000257426321741,0.00153608666259,-0.00275545028758,0.00327030293106,,0.866929600558,,coefficient,0.000257426321741,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Humidity,1671,0.000257426321741,0.00149048259341,-0.00266600257825,0.00318085522173,,0.862897813291,,coefficient,0.000257426321741,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Rainfall,1671,0.000908843792037,3.75541681682e-05,0.000835185138777,0.000982502445297,,4.89410259641e-111,,coefficient,0.000908843792037,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Rainfall,1671,0.000908843792037,3.72666142679e-05,0.000835749146292,0.000981938437783,,1.71667081377e-112,,coefficient,0.000908843792037,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Sunlight_Hours,1671,0.0146544506461,0.0135608494341,-0.0119437661457,0.0412526674379,,0.280012850562,,coefficient,0.0146544506461,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Sunlight_Hours,1671,0.0146544506461,0.0132672712947,-0.0113679427039,0.040676843996,,0.269512273555,,coefficient,0.0146544506461,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Wind_Speed,1671,-0.0485232783962,0.0054794907232,-0.05927073805,-0.0377758187424,,2.0980871873e-18,,coefficient,-0.0485232783962,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Wind_Speed,1671,-0.0485232783962,0.00556396184035,-0.0594364194919,-0.0376101373006,,6.58057763574e-18,,coefficient,-0.0485232783962,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Altitude,1671,-1.13163266948e-06,4.28045212468e-05,-8.50883155693e-05,8.28250502304e-05,,0.978911790263,,coefficient,-1.13163266948e-06,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Altitude,1671,-1.13163266948e-06,4.25976891847e-05,-8.46826356706e-05,8.24193703316e-05,,0.978809421006,,coefficient,-1.13163266948e-06,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Fertilizer_Used,1671,0.010134585555,0.000315751868355,0.00951527061544,0.0107539004945,,3.59657313757e-176,,coefficient,0.010134585555,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Fertilizer_Used,1671,0.010134585555,0.000312545926289,0.00952155874234,0.0107476123676,,5.25553876164e-179,,coefficient,0.010134585555,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_COEF,Numerical OLS conventional,Wheat,Pesticide_Used,1671,-0.00291151894143,0.00377857094916,-0.0103227987257,0.00449976084288,,0.441092862972,,coefficient,-0.00291151894143,PARTIALLY_COMPLETED,
+A4_COEF,Numerical OLS HC3,Wheat,Pesticide_Used,1671,-0.00291151894143,0.00377422011765,-0.0103142650155,0.00449122713264,,0.440566503111,,coefficient,-0.00291151894143,PARTIALLY_COMPLETED,HC3 heteroskedasticity-robust inference; not causal.
+A4_SENS,Exclude primary-fit Cook flags,Wheat,,1593,,,,,,,,adjusted_R2,0.621512385774,PARTIALLY_COMPLETED,Sensitivity only: excluded 78 of 1671 flagged rows; primary analysis retains all observations.
+A4_SENS,Exclude primary-fit Cook flags,Wheat,,1593,,,,,,,,numeric_slope_sign_flips,1,PARTIALLY_COMPLETED,Compared all 14 numeric slopes with primary fit.
+A4_SENS,Exclude primary-fit Cook flags,Wheat,,1593,,,,,,,,HC3_p05_status_changes,2,PARTIALLY_COMPLETED,"Count among 14 numeric slopes, full-sample vs sensitivity fit."
+A4_EXT,Extended OLS,Wheat,,1671,0.567364520802,,,,,,,R2,0.567364520802,PARTIALLY_COMPLETED,
+A4_EXT,Extended OLS,Wheat,,1671,0.561056348566,,,,,,,adjusted_R2,0.561056348566,PARTIALLY_COMPLETED,"Adds one-hot Soil_Type, Region, Irrigation_Type; Crop_Type is constant within crop."
+A4_EXT,Extended OLS HC3 RESET power 2,Wheat,,1671,,,,,0.340562338388,0.559584811676,,RESET_F,0.340562338388,PARTIALLY_COMPLETED,HC3 covariance.
+A4_EXT_COEF,Extended OLS HC3,Wheat,const,1671,3.11536445531,0.319634382909,2.48843157546,3.74229733515,,7.33990925052e-22,,coefficient,3.11536445531,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,N,1671,0.00536098650486,0.000637310760931,0.00411096118822,0.00661101182151,,8.62948554434e-17,,coefficient,0.00536098650486,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,P,1671,0.00337128136456,0.00109166841842,0.00123007609381,0.0055124866353,,0.00204743196108,,coefficient,0.00337128136456,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,K,1671,0.00429248289095,0.000727162215606,0.00286622236855,0.00571874341335,,4.32438709896e-09,,coefficient,0.00429248289095,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Soil_pH,1671,-0.0347748078661,0.0281635093078,-0.0900148913521,0.0204652756199,,0.217100921002,,coefficient,-0.0347748078661,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Soil_Moisture,1671,0.0318362442296,0.0018615816603,0.0281849263059,0.0354875621534,,1.76210911077e-60,,coefficient,0.0318362442296,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Organic_Carbon,1671,0.123656748502,0.071575156822,-0.0167312122154,0.26404470922,,0.0842387452846,,coefficient,0.123656748502,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Temperature,1671,0.00415576212586,0.0030675549559,-0.00186095937038,0.0101724836221,,0.175683959987,,coefficient,0.00415576212586,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Humidity,1671,0.0001532524578,0.00150020252971,-0.00278925417664,0.00309575909224,,0.918646475483,,coefficient,0.0001532524578,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Rainfall,1671,0.000910675533487,3.74878059079e-05,0.00083714671627,0.000984204350703,,1.16941670358e-111,,coefficient,0.000910675533487,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Sunlight_Hours,1671,0.0146853613973,0.0134254248964,-0.0116473510501,0.0410180738447,,0.274182114178,,coefficient,0.0146853613973,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Wind_Speed,1671,-0.0486324980763,0.00559732424983,-0.0596111249044,-0.0376538712482,,8.69642284425e-18,,coefficient,-0.0486324980763,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Altitude,1671,1.89572930481e-06,4.31516687933e-05,-8.27422240359e-05,8.65336826455e-05,,0.964964117408,,coefficient,1.89572930481e-06,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Fertilizer_Used,1671,0.0100879700304,0.000315239935366,0.00946965644752,0.0107062836134,,3.94801381348e-175,,coefficient,0.0100879700304,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Pesticide_Used,1671,-0.00253527780315,0.00380608908209,-0.0100005647584,0.00493000915212,,0.505433496409,,coefficient,-0.00253527780315,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Soil_Type_Loamy,1671,0.00408466354301,0.0740967759281,-0.141249216677,0.149418543763,,0.956044722475,,coefficient,0.00408466354301,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Soil_Type_Sandy,1671,-0.00952773713962,0.0817360548999,-0.169845346964,0.150789872685,,0.907217308619,,coefficient,-0.00952773713962,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Soil_Type_Silt,1671,-0.0716850978965,0.0776197261669,-0.223928914772,0.0805587189788,,0.355860044815,,coefficient,-0.0716850978965,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Region_East,1671,0.0925331687152,0.087056830694,-0.0782206440646,0.263286981495,,0.287980802133,,coefficient,0.0925331687152,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Region_North,1671,0.024525744553,0.0861011430215,-0.144353576442,0.193405065548,,0.775796374915,,coefficient,0.024525744553,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Region_South,1671,0.13584435244,0.084858342907,-0.0305973326301,0.30228603751,,0.109604978928,,coefficient,0.13584435244,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Region_West,1671,0.10635139719,0.0879757112026,-0.0662047135727,0.278907507952,,0.226885545036,,coefficient,0.10635139719,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Irrigation_Type_Drip,1671,0.113521322361,0.074039598926,-0.0317004105293,0.258743055251,,0.125406083814,,coefficient,0.113521322361,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Irrigation_Type_Rainfed,1671,0.0379446662831,0.0771628771237,-0.113403084019,0.189292416585,,0.622963292036,,coefficient,0.0379446662831,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A4_EXT_COEF,Extended OLS HC3,Wheat,Irrigation_Type_Sprinkler,1671,-0.00701725326246,0.078750589694,-0.16147915294,0.147444646415,,0.929007467715,,coefficient,-0.00701725326246,PARTIALLY_COMPLETED,Categorical reference levels are alphabetical first levels.
+A5_QUADRATIC_TEST,Quadratic test 1 unadjusted,Cotton,Fertilizer_c10_sq,1666,-0.000786997078024,0.000585003142784,-0.00193441727369,0.000360423117638,-1.34528692321,0.178716003033,,HC3_quadratic_term_coefficient,-0.000786997078024,PARTIALLY_COMPLETED,Controls: none; centered fertilizer is per 10 kg/ha; this transparent four-test operationalization is necessary because the cited analysis register was absent.
+A5_QUADRATIC_TEST,Quadratic test 2 nutrient and pesticide adjusted,Cotton,Fertilizer_c10_sq,1666,-0.00064805101973,0.000573481939275,-0.00177287559996,0.000476773560498,-1.13002864667,0.258627504251,,HC3_quadratic_term_coefficient,-0.00064805101973,PARTIALLY_COMPLETED,"Controls: N, P, K, Pesticide_Used; centered fertilizer is per 10 kg/ha; this transparent four-test operationalization is necessary because the cited analysis register was absent."
+A5_QUADRATIC_TEST,Quadratic test 3 all numeric covariates,Cotton,Fertilizer_c10_sq,1666,-0.00125211111435,0.000452390441957,-0.0021394309767,-0.000364791252003,-2.76776650924,0.00570724559634,,HC3_quadratic_term_coefficient,-0.00125211111435,PARTIALLY_COMPLETED,"Controls: N, P, K, Soil_pH, Soil_Moisture, Organic_Carbon, Temperature, Humidity, Rainfall, Sunlight_Hours, Wind_Speed, Altitude, Pesticide_Used; centered fertilizer is per 10 kg/ha; this transparent four-test operationalization is necessary because the cited analysis register was absent."
+A5_QUADRATIC_TEST,Quadratic test 4 full numeric plus categorical,Cotton,Fertilizer_c10_sq,1666,-0.00126995281358,0.000455025242994,-0.00216244457681,-0.000377461050355,-2.79095024537,0.00531623741931,,HC3_quadratic_term_coefficient,-0.00126995281358,PARTIALLY_COMPLETED,"Controls: N, P, K, Soil_pH, Soil_Moisture, Organic_Carbon, Temperature, Humidity, Rainfall, Sunlight_Hours, Wind_Speed, Altitude, Pesticide_Used, Soil_Type, Region, Irrigation_Type; centered fertilizer is per 10 kg/ha; this transparent four-test operationalization is necessary because the cited analysis register was absent."
+A5_QUADRATIC_TEST,Quadratic test 1 unadjusted,Cotton,,1666,,,,,,0.178716003033,0.357432006065,Holm_adjusted_p,0.357432006065,PARTIALLY_COMPLETED,Holm correction across the four explicitly defined Cotton quadratic tests.
+A5_QUADRATIC_TEST,Quadratic test 2 nutrient and pesticide adjusted,Cotton,,1666,,,,,,0.258627504251,0.357432006065,Holm_adjusted_p,0.357432006065,PARTIALLY_COMPLETED,Holm correction across the four explicitly defined Cotton quadratic tests.
+A5_QUADRATIC_TEST,Quadratic test 3 all numeric covariates,Cotton,,1666,,,,,,0.00570724559634,0.0212649496772,Holm_adjusted_p,0.0212649496772,PARTIALLY_COMPLETED,Holm correction across the four explicitly defined Cotton quadratic tests.
+A5_QUADRATIC_TEST,Quadratic test 4 full numeric plus categorical,Cotton,,1666,,,,,,0.00531623741931,0.0212649496772,Holm_adjusted_p,0.0212649496772,PARTIALLY_COMPLETED,Holm correction across the four explicitly defined Cotton quadratic tests.
+A5_MODEL,Linear full-adjustment,Cotton,,1666,0.593290550918,,,,,,,R2,0.593290550918,PARTIALLY_COMPLETED,
+A5_MODEL,Linear full-adjustment,Cotton,,1666,0.587342332284,,,,,,,adjusted_R2,0.587342332284,PARTIALLY_COMPLETED,
+A5_MODEL,Linear full-adjustment,Cotton,,1666,5100.0803765,,,,,,,AIC,5100.0803765,PARTIALLY_COMPLETED,OLS Gaussian likelihood; parameter count including intercept=25.
+A5_MODEL,Linear full-adjustment,Cotton,,1666,5235.53489707,,,,,,,BIC,5235.53489707,PARTIALLY_COMPLETED,OLS Gaussian likelihood; parameter count including intercept=25.
+A5_MODEL,Linear full-adjustment,Cotton,,1666,25,,,,,,,parameter_count_including_intercept,25,PARTIALLY_COMPLETED,
+A5_MODEL,Linear full-adjustment HC3 RESET power 2,Cotton,,1666,,,,,5.27280108152,0.0217867112946,,RESET_F,5.27280108152,PARTIALLY_COMPLETED,"HC3 covariance; RESET is a general functional-form diagnostic, not a curvature-specific test."
+A5_COEF,Linear full-adjustment HC3,Cotton,Fertilizer_c10,1666,0.104377727425,0.00332082630681,0.0978642233119,0.110891231539,,3.75994734549e-170,,coefficient,0.104377727425,PARTIALLY_COMPLETED,
+A5_MODEL,Quadratic full-adjustment,Cotton,,1666,0.595373899169,,,,,,,R2,0.595373899169,PARTIALLY_COMPLETED,
+A5_MODEL,Quadratic full-adjustment,Cotton,,1666,0.589205818364,,,,,,,adjusted_R2,0.589205818364,PARTIALLY_COMPLETED,
+A5_MODEL,Quadratic full-adjustment,Cotton,,1666,5093.5244447,,,,,,,AIC,5093.5244447,PARTIALLY_COMPLETED,OLS Gaussian likelihood; parameter count including intercept=26.
+A5_MODEL,Quadratic full-adjustment,Cotton,,1666,5234.3971461,,,,,,,BIC,5234.3971461,PARTIALLY_COMPLETED,OLS Gaussian likelihood; parameter count including intercept=26.
+A5_MODEL,Quadratic full-adjustment,Cotton,,1666,26,,,,,,,parameter_count_including_intercept,26,PARTIALLY_COMPLETED,
+A5_MODEL,Quadratic full-adjustment HC3 RESET power 2,Cotton,,1666,,,,,1.50072176282,0.22073636265,,RESET_F,1.50072176282,PARTIALLY_COMPLETED,"HC3 covariance; RESET is a general functional-form diagnostic, not a curvature-specific test."
+A5_COEF,Quadratic full-adjustment HC3,Cotton,Fertilizer_c10,1666,0.10433755971,0.00330594454587,0.0978532419228,0.110821877498,,3.10817006252e-171,,coefficient,0.10433755971,PARTIALLY_COMPLETED,
+A5_COEF,Quadratic full-adjustment HC3,Cotton,Fertilizer_c10_sq,1666,-0.00126995281358,0.000455025242994,-0.00216244457681,-0.000377461050355,,0.00531623741931,,coefficient,-0.00126995281358,PARTIALLY_COMPLETED,
+A5_MODEL,Natural cubic spline df=4 full-adjustment,Cotton,,1666,0.596936998281,,,,,,,R2,0.596936998281,PARTIALLY_COMPLETED,
+A5_MODEL,Natural cubic spline df=4 full-adjustment,Cotton,,1666,0.590293102648,,,,,,,adjusted_R2,0.590293102648,PARTIALLY_COMPLETED,
+A5_MODEL,Natural cubic spline df=4 full-adjustment,Cotton,,1666,5091.0761062,,,,,,,AIC,5091.0761062,PARTIALLY_COMPLETED,OLS Gaussian likelihood; parameter count including intercept=28.
+A5_MODEL,Natural cubic spline df=4 full-adjustment,Cotton,,1666,5242.78516923,,,,,,,BIC,5242.78516923,PARTIALLY_COMPLETED,OLS Gaussian likelihood; parameter count including intercept=28.
+A5_MODEL,Natural cubic spline df=4 full-adjustment,Cotton,,1666,28,,,,,,,parameter_count_including_intercept,28,PARTIALLY_COMPLETED,
+A5_MODEL,Natural cubic spline df=4 full-adjustment HC3 RESET power 2,Cotton,,1666,,,,,1.4952145809,0.221585157766,,RESET_F,1.4952145809,PARTIALLY_COMPLETED,"HC3 covariance; RESET is a general functional-form diagnostic, not a curvature-specific test."
+A5_COEF,Natural cubic spline df=4 full-adjustment HC3,Cotton,Fertilizer_spline_1,1666,0.155643722807,0.0991981091341,-0.0389247687889,0.350212214402,,0.11683664401,,coefficient,0.155643722807,PARTIALLY_COMPLETED,
+A5_COEF,Natural cubic spline df=4 full-adjustment HC3,Cotton,Fertilizer_spline_2,1666,0.631192618174,0.0673171794793,0.499155806343,0.763229430006,,2.18878995867e-20,,coefficient,0.631192618174,PARTIALLY_COMPLETED,
+A5_COEF,Natural cubic spline df=4 full-adjustment HC3,Cotton,Fertilizer_spline_3,1666,1.76291183978,0.0861665824362,1.5939035581,1.93192012146,,4.9586938307e-83,,coefficient,1.76291183978,PARTIALLY_COMPLETED,
+A5_COEF,Natural cubic spline df=4 full-adjustment HC3,Cotton,Fertilizer_spline_4,1666,1.44797883239,0.10790129606,1.23633979412,1.65961787066,,4.94310125906e-39,,coefficient,1.44797883239,PARTIALLY_COMPLETED,
+A5_MODEL,Quadratic full-adjustment,Cotton,,1666,0.00208334825134,,,,,,,incremental_R2_vs_linear,0.00208334825134,PARTIALLY_COMPLETED,In-sample increase relative to like-for-like linear full-adjustment model.
+A5_MODEL,Natural cubic spline df=4 full-adjustment,Cotton,,1666,0.00364644736333,,,,,,,incremental_R2_vs_linear,0.00364644736333,PARTIALLY_COMPLETED,In-sample increase relative to like-for-like linear full-adjustment model.
+A6,RF permutation importance seed 11,All,N,2000,0.0207845700675,0.00266364621941,,,,,,RMSE_increase,0.0207845700675,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,P,2000,0.00581891332928,0.00224652944159,,,,,,RMSE_increase,0.00581891332928,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,K,2000,0.01682938524,0.00277871693268,,,,,,RMSE_increase,0.01682938524,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Soil_pH,2000,0.0423068638872,0.00432989825569,,,,,,RMSE_increase,0.0423068638872,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Soil_Moisture,2000,0.138514190844,0.0099832871086,,,,,,RMSE_increase,0.138514190844,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Organic_Carbon,2000,0.000317227930902,0.000677184622956,,,,,,RMSE_increase,0.000317227930902,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Temperature,2000,-0.00109861969706,0.000988055407628,,,,,,RMSE_increase,-0.00109861969706,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Humidity,2000,-0.000227168273475,0.00119736970414,,,,,,RMSE_increase,-0.000227168273475,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Rainfall,2000,0.35876134897,0.0159561722657,,,,,,RMSE_increase,0.35876134897,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Sunlight_Hours,2000,3.43097816018e-05,0.00102989807128,,,,,,RMSE_increase,3.43097816018e-05,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Wind_Speed,2000,0.0267615612371,0.00386689809872,,,,,,RMSE_increase,0.0267615612371,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Altitude,2000,-0.00054498682991,0.000721483917248,,,,,,RMSE_increase,-0.00054498682991,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Fertilizer_Used,2000,0.492742471411,0.0136620530316,,,,,,RMSE_increase,0.492742471411,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Pesticide_Used,2000,0.00132939453147,0.00121498470734,,,,,,RMSE_increase,0.00132939453147,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Soil_Type,2000,-0.000857695757925,0.000478673624224,,,,,,RMSE_increase,-0.000857695757925,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Region,2000,-0.000313667397489,0.000660408784171,,,,,,RMSE_increase,-0.000313667397489,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Crop_Type,2000,32.7489907423,0.352399647786,,,,,,RMSE_increase,32.7489907423,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 11,All,Irrigation_Type,2000,0.000244580811379,0.000462550050109,,,,,,RMSE_increase,0.000244580811379,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,N,2000,0.0208900664375,0.00365565654783,,,,,,RMSE_increase,0.0208900664375,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,P,2000,0.00725477281761,0.00229662176955,,,,,,RMSE_increase,0.00725477281761,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,K,2000,0.017777129886,0.00255323454806,,,,,,RMSE_increase,0.017777129886,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Soil_pH,2000,0.0427714640893,0.00379288756075,,,,,,RMSE_increase,0.0427714640893,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Soil_Moisture,2000,0.138363351287,0.00788358992767,,,,,,RMSE_increase,0.138363351287,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Organic_Carbon,2000,0.000162406687294,0.00118643918918,,,,,,RMSE_increase,0.000162406687294,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Temperature,2000,-0.0016615992784,0.000895663925983,,,,,,RMSE_increase,-0.0016615992784,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Humidity,2000,0.000153693653858,0.00114099446952,,,,,,RMSE_increase,0.000153693653858,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Rainfall,2000,0.358913987394,0.010181934213,,,,,,RMSE_increase,0.358913987394,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Sunlight_Hours,2000,-0.000183980817604,0.000834222040226,,,,,,RMSE_increase,-0.000183980817604,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Wind_Speed,2000,0.0284079776788,0.00456563199879,,,,,,RMSE_increase,0.0284079776788,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Altitude,2000,-0.000534696204557,0.000923788899968,,,,,,RMSE_increase,-0.000534696204557,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Fertilizer_Used,2000,0.491369668682,0.0159998199952,,,,,,RMSE_increase,0.491369668682,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Pesticide_Used,2000,0.000989166508892,0.00126738977463,,,,,,RMSE_increase,0.000989166508892,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Soil_Type,2000,-0.000898214850652,0.000546137220895,,,,,,RMSE_increase,-0.000898214850652,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Region,2000,-0.000399705678997,0.000791219619252,,,,,,RMSE_increase,-0.000399705678997,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Crop_Type,2000,32.6982785647,0.396396588147,,,,,,RMSE_increase,32.6982785647,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 29,All,Irrigation_Type,2000,0.000158579084389,0.000610051247534,,,,,,RMSE_increase,0.000158579084389,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,N,2000,0.0208467161034,0.00305402849945,,,,,,RMSE_increase,0.0208467161034,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,P,2000,0.0069229481129,0.00221553800334,,,,,,RMSE_increase,0.0069229481129,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,K,2000,0.0175492863161,0.00222066754948,,,,,,RMSE_increase,0.0175492863161,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Soil_pH,2000,0.0400877130871,0.00394545432277,,,,,,RMSE_increase,0.0400877130871,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Soil_Moisture,2000,0.138153502152,0.00908475705225,,,,,,RMSE_increase,0.138153502152,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Organic_Carbon,2000,0.000290311677173,0.000801982461226,,,,,,RMSE_increase,0.000290311677173,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Temperature,2000,-0.00130099090666,0.00103874211205,,,,,,RMSE_increase,-0.00130099090666,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Humidity,2000,0.000148532716824,0.000972398074696,,,,,,RMSE_increase,0.000148532716824,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Rainfall,2000,0.364747256071,0.0137379300919,,,,,,RMSE_increase,0.364747256071,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Sunlight_Hours,2000,6.10393902604e-05,0.000870639879747,,,,,,RMSE_increase,6.10393902604e-05,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Wind_Speed,2000,0.0273035360021,0.00307073608779,,,,,,RMSE_increase,0.0273035360021,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Altitude,2000,-0.000342555064127,0.000714246003088,,,,,,RMSE_increase,-0.000342555064127,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Fertilizer_Used,2000,0.492535660824,0.0137258692259,,,,,,RMSE_increase,0.492535660824,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Pesticide_Used,2000,0.000787352851095,0.000909776142697,,,,,,RMSE_increase,0.000787352851095,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Soil_Type,2000,-0.00106658789892,0.000614638896851,,,,,,RMSE_increase,-0.00106658789892,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Region,2000,-0.00042893281838,0.000511317512648,,,,,,RMSE_increase,-0.00042893281838,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Crop_Type,2000,32.8263971988,0.347423918687,,,,,,RMSE_increase,32.8263971988,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6,RF permutation importance seed 47,All,Irrigation_Type,2000,0.00016946293094,0.000635939474112,,,,,,RMSE_increase,0.00016946293094,COMPLETED,RF split seed 20261012; 20 repeats; higher positive value means worse RMSE after feature permutation.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Crop_Type,2000,32.7578888353,0.363711631495,,,,,,RMSE_increase,32.7578888353,COMPLETED,Overall rank=1; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Fertilizer_Used,2000,0.492215933639,0.0142684763342,,,,,,RMSE_increase,0.492215933639,COMPLETED,Overall rank=2; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Rainfall,2000,0.360807530812,0.0135664797,,,,,,RMSE_increase,0.360807530812,COMPLETED,Overall rank=3; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Soil_Moisture,2000,0.138343681427,0.00887193173972,,,,,,RMSE_increase,0.138343681427,COMPLETED,Overall rank=4; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Soil_pH,2000,0.0417220136879,0.0041325466307,,,,,,RMSE_increase,0.0417220136879,COMPLETED,Overall rank=5; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Wind_Speed,2000,0.0274910249727,0.00387840708466,,,,,,RMSE_increase,0.0274910249727,COMPLETED,Overall rank=6; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,N,2000,0.0208404508695,0.00309741572832,,,,,,RMSE_increase,0.0208404508695,COMPLETED,Overall rank=7; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,K,2000,0.0173852671474,0.00251790336929,,,,,,RMSE_increase,0.0173852671474,COMPLETED,Overall rank=8; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,P,2000,0.00666554475326,0.00229949935314,,,,,,RMSE_increase,0.00666554475326,COMPLETED,Overall rank=9; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Pesticide_Used,2000,0.00103530463048,0.0011445889093,,,,,,RMSE_increase,0.00103530463048,COMPLETED,Overall rank=10; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Organic_Carbon,2000,0.000256648765123,0.000901525596985,,,,,,RMSE_increase,0.000256648765123,COMPLETED,Overall rank=11; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Irrigation_Type,2000,0.000190874275569,0.000566102703995,,,,,,RMSE_increase,0.000190874275569,COMPLETED,Overall rank=12; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Humidity,2000,2.50193657358e-05,0.00110353450624,,,,,,RMSE_increase,2.50193657358e-05,COMPLETED,Overall rank=13; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Sunlight_Hours,2000,-2.95438819139e-05,0.000906666856012,,,,,,RMSE_increase,-2.95438819139e-05,COMPLETED,Overall rank=14; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Region,2000,-0.000380768631622,0.000654738693062,,,,,,RMSE_increase,-0.000380768631622,COMPLETED,Overall rank=15; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Altitude,2000,-0.000474079366198,0.000784569324295,,,,,,RMSE_increase,-0.000474079366198,COMPLETED,Overall rank=16; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Soil_Type,2000,-0.000940832835832,0.000547555094223,,,,,,RMSE_increase,-0.000940832835832,COMPLETED,Overall rank=17; pooled SD across 60 repeats.
+A6_SUMMARY,RF permutation importance pooled across permutation seeds,All,Temperature,2000,-0.00135373662737,0.000987588412979,,,,,,RMSE_increase,-0.00135373662737,COMPLETED,Overall rank=18; pooled SD across 60 repeats.
+A6_RANK,Top-four rank permutation seed 11,All,Crop_Type,2000,1,,,,,,,rank,1,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 11,All,Fertilizer_Used,2000,2,,,,,,,rank,2,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 11,All,Rainfall,2000,3,,,,,,,rank,3,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 11,All,Soil_Moisture,2000,4,,,,,,,rank,4,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 29,All,Crop_Type,2000,1,,,,,,,rank,1,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 29,All,Fertilizer_Used,2000,2,,,,,,,rank,2,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 29,All,Rainfall,2000,3,,,,,,,rank,3,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 29,All,Soil_Moisture,2000,4,,,,,,,rank,4,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 47,All,Crop_Type,2000,1,,,,,,,rank,1,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 47,All,Fertilizer_Used,2000,2,,,,,,,rank,2,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 47,All,Rainfall,2000,3,,,,,,,rank,3,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A6_RANK,Top-four rank permutation seed 47,All,Soil_Moisture,2000,4,,,,,,,rank,4,COMPLETED,"Top four for this seed: Crop_Type, Fertilizer_Used, Rainfall, Soil_Moisture"
+A7,Pooled rainfall-yield Pearson correlation,All,,10000,0.0312125603041,,0.0128940674601,0.0494880524025,0.0312125603041,0.0017985504261,,Pearson_r,0.0312125603041,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Crop-specific rainfall-yield Pearson correlation,Cotton,,1666,0.43555827851,,0.397022837408,0.471622015333,0.43555827851,4.36085887191e-78,,Pearson_r,0.43555827851,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Crop-specific rainfall-yield Pearson correlation,Maize,,1658,0.475142765567,,0.440742725838,0.510861956184,0.475142765567,4.01168131109e-94,,Pearson_r,0.475142765567,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Crop-specific rainfall-yield Pearson correlation,Potato,,1670,0.462876282611,,0.426638102453,0.49570598938,0.462876282611,1.94756427089e-89,,Pearson_r,0.462876282611,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Crop-specific rainfall-yield Pearson correlation,Rice,,1702,0.443300678595,,0.405255141588,0.481088022629,0.443300678595,7.40965187298e-83,,Pearson_r,0.443300678595,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Crop-specific rainfall-yield Pearson correlation,Sugarcane,,1633,0.417304566963,,0.376638706849,0.45576644851,0.417304566963,8.12467894381e-70,,Pearson_r,0.417304566963,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Crop-specific rainfall-yield Pearson correlation,Wheat,,1671,0.397579582055,,0.356928838557,0.440296418496,0.397579582055,2.15210494829e-64,,Pearson_r,0.397579582055,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A7,Within-crop-centered rainfall-yield Pearson correlation,All,,10000,0.439050567208,,0.423644087466,0.453896074155,0.439050567208,0,,Pearson_r,0.439050567208,COMPLETED,Two-sided Pearson p; percentile bootstrap 95% CI (1000 resamples; seed 20261013).
+A8,Cross-partition near-duplicate scan,All,,2000,0,,,,,,,test_rows_with_predictor_match,0,COMPLETED,Primary split seed=20261012; exact categorical predictor match; all 14 numerical predictors normalized by full-data observed ranges; max absolute normalized difference <= 1e-06; target excluded from matching.
+A8,Cross-partition near-duplicate scan,All,,2000,0,,,,,,,matching_cross_partition_pairs,0,COMPLETED,Tolerance=1e-06; exact categorical predictors; target excluded. Pair count can exceed matched test-row count.
+A8,Target differences among predictor matches,All,,0,,,,,,,,median_absolute_target_difference,,COMPLETED,No matching pairs at tolerance=1e-06.
+A8,Cross-partition near-duplicate scan,All,,2000,0,,,,,,,test_rows_with_predictor_match,0,COMPLETED,Primary split seed=20261012; exact categorical predictor match; all 14 numerical predictors normalized by full-data observed ranges; max absolute normalized difference <= 0.01; target excluded from matching.
+A8,Cross-partition near-duplicate scan,All,,2000,0,,,,,,,matching_cross_partition_pairs,0,COMPLETED,Tolerance=0.01; exact categorical predictors; target excluded. Pair count can exceed matched test-row count.
+A8,Target differences among predictor matches,All,,0,,,,,,,,median_absolute_target_difference,,COMPLETED,No matching pairs at tolerance=0.01.

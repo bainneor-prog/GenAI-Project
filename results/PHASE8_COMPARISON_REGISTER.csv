@@ -1,0 +1,9 @@
+Comparison_ID,Primary_Evidence,Independent_Evidence,Scope,Agreement,Explanation,Finding_Implication,Status
+C001,A004-A009,Q1,Fertilizer-yield correlations,AGREE_WITHIN_DISPLAYED_PRECISION,"Independent r values reproduce primary crop-specific values.",Supports F002,COMPARISON_ONLY
+C002,A017-A022;A016,A7,Rainfall correlations and pooled contrast,AGREE_WITHIN_DISPLAYED_PRECISION,"Pooled and crop-specific r values reproduce; within-centred result is additional.",Supports F003,COMPARISON_ONLY
+C003,A010-A015,A3,Irrigation ANOVA,AGREE,"Classical F statistics agree; independent Welch/Holm results remain non-significant.",Supports F004,COMPARISON_ONLY
+C004,A029-A034,A4,Crop-specific regressions,PARTIAL,"Independent analysis is partially completed and uses explicit broader operational specifications; D017 remains unresolved.",F005 remains restricted,COMPARISON_ONLY
+C005,A055,A5,Cotton nonlinear analysis,PARTIAL,"Independent A5 is partially completed and its exact four-test register was unavailable; model counts/specification differ by documented design.",Sensitivity only; no cleared interpretation,COMPARISON_ONLY
+C006,A056-A061,A1,Predictive benchmarks,PARTIAL,"Crop mean and global mean are comparable on the first seed; five-seed model ranking differs under independent configurations.",Supports strong prediction but not a unique best model,COMPARISON_ONLY
+C007,A060,A6,RF permutation importance,AGREE_DIRECTIONALLY,"Crop_Type dominates; Fertilizer_Used and Rainfall follow. Magnitudes vary slightly by RF and permutation settings.",Supports F007 directionally,COMPARISON_ONLY
+C008,A001-A039,A0,Source validation,AGREE,"Shape, columns, missingness, duplicates and checksum agree.",Supports F001 data basis,COMPARISON_ONLY
