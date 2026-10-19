@@ -1,15 +1,28 @@
 """Results-first Phase 10 stakeholder dashboard."""
 import re
+import importlib
 from urllib.parse import quote
 from pathlib import Path
 import pandas as pd
 import streamlit as st
 try:
-    from dashboard.evidence import ROOT, DatasetValidationError, load_evidence, eligible_findings, load_csv, load_source_dataset, load_crop_yield_summary
+    from dashboard import evidence as evidence_module
     from dashboard.charts import crop_yield_boxplot
 except ModuleNotFoundError:
-    from evidence import ROOT, DatasetValidationError, load_evidence, eligible_findings, load_csv, load_source_dataset, load_crop_yield_summary
+    import evidence as evidence_module
     from charts import crop_yield_boxplot
+
+# Streamlit Cloud can retain an imported module while hot-reloading this entry
+# point. Reload it so app.py and the validated loader always come from the same
+# deployed revision.
+evidence_module = importlib.reload(evidence_module)
+ROOT = evidence_module.ROOT
+DatasetValidationError = evidence_module.DatasetValidationError
+load_evidence = evidence_module.load_evidence
+eligible_findings = evidence_module.eligible_findings
+load_csv = evidence_module.load_csv
+load_source_dataset = evidence_module.load_source_dataset
+load_crop_yield_summary = evidence_module.load_crop_yield_summary
 try:
     from dashboard.exploration import descriptive_summary, safe_pearson, outlier_flags, numeric_columns
 except ModuleNotFoundError:
