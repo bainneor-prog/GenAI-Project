@@ -57,7 +57,7 @@ for frame in (decisions, human_register):
 eligible = eligible_findings(decisions)
 st.sidebar.markdown("## 🌾 Crop Yield BI")
 st.sidebar.caption("Results, patterns and evidence")
-page = st.sidebar.radio("Navigate", ["Overview", "Business Questions & Insights", "Crop Performance", "Yield Relationships", "Prediction Accuracy", "Explore the Data", "Traditional BI vs GenAI", "How We Analysed the Data", "Analysis Process"])
+page = st.sidebar.radio("Navigate", ["Overview", "Understanding the Results", "Business Questions & Insights", "Crop Performance", "Yield Relationships", "Prediction Accuracy", "Explore the Data", "Traditional BI vs GenAI", "How We Analysed the Data", "Analysis Process"])
 
 def evidence(relative, show_warning=True):
     frame = load_csv(relative)
@@ -93,7 +93,56 @@ def analysis_context(ids):
     with st.expander("What these Analysis IDs represent"):
         st.dataframe(selected[["analysis_id", "analysis_purpose", "method", "n", "output_location"]], hide_index=True)
 
-if page == "Overview":
+if page == "Understanding the Results":
+    st.title("Understanding the Results")
+    st.caption("A plain-English guide to the findings, evidence codes and review decisions.")
+    st.info("The numbers come from stored Python results. The explanations below make those results easier to read; they do not add new analysis.")
+    st.subheader("How to read the codes")
+    st.markdown("**Finding IDs (F001–F007)** identify the claims discussed in the dashboard. **Analysis IDs (Axxx)** identify the specific calculation behind a claim. For example, F001 links to A002, the crop-level summary calculation.")
+    st.markdown("**UNVERIFIED** is the original technical status preserved for audit integrity. **ACCEPT_WITH_QUALIFICATIONS** is a separate human reporting decision: the reviewer allowed the finding to be shown only with its stated limits. It does not rewrite the technical status.")
+    st.markdown("**DEFER** means the reviewer did not allow the finding to be used as an accepted conclusion yet. F005 was deferred because a specification warning affects interpretation of the Cotton regression coefficients. Cotton remains in the dataset and in the fertiliser correlation analysis; only those separate regression-coefficient interpretations are withheld.")
+    st.subheader("Findings in everyday English")
+    plain = {
+        "F001": "Average recorded yield differs between crop groups. This describes the dataset; it does not show that choosing a crop causes a particular yield.",
+        "F002": "Fertiliser use and yield move together positively within each crop in these records. That is an association, not proof that adding fertiliser will increase yield.",
+        "F003": "Rainfall is more positively associated with yield within individual crops than in the combined data. Combining groups can hide relationships.",
+        "F004": "The tested irrigation comparisons were not statistically significant at the unadjusted five-percent level. This does not prove irrigation has no effect.",
+        "F005": "The crop regression models explain a substantial share of variation, but coefficient interpretations are withheld while the Cotton model specification warning remains unresolved.",
+        "F006": "Several models predict well on the tested holdout records. The model ranking depends on the evaluation design, so no universally best model is claimed.",
+        "F007": "In the tested Random Forest, crop type contributed most to prediction, followed by fertiliser use and rainfall. Predictive importance is not causal importance."
+    }
+    for _, finding in enumerate(findings):
+        fid = finding["finding_id"]
+        decision_rows = decisions[decisions["Finding_ID"].astype(str).str.strip().eq(fid)]
+        decision_text = decision_rows.iloc[0]["Human_Decision"].replace("_", " ") if not decision_rows.empty else "Decision not recorded"
+        with st.expander(f"{fid} · {decision_text}"):
+            st.markdown(f"**What it means:** {plain.get(fid, finding['claim'])}")
+            st.markdown(f"**Technical claim:** {finding['claim']}")
+            st.markdown(f"**Evidence:** {finding['supporting_result']}")
+            st.markdown(f"**Limitations:** {finding['limitations']}")
+            st.caption(f"Analysis IDs: {', '.join(finding['analysis_ids'])} · Original technical status: {finding['status']} · Human decision: {decision_text}")
+            if fid == "F005": st.warning("F005 remains deferred under D017. Cotton was not removed from any dataset or correlation analysis.")
+    st.subheader("Common terms, with simple examples")
+    terms = [
+        ("Pearson correlation", "A score describing how two measurements move together. A positive value means higher values of one tend to occur with higher values of the other; it does not prove cause. Example: umbrella sales and rainfall may rise together without umbrellas causing rain."),
+        ("Sample size (n)", "The number of records used. A result based on 1,700 crop records has more information than one based on 17, but a large sample can still reflect biased or synthetic data."),
+        ("p-value", "A measure used to compare the observed result with a no-difference assumption. It is not the probability that a claim is true, and it does not measure practical importance."),
+        ("RMSE", "A prediction error measure in the same units as the outcome. Lower is better. An RMSE of 2 means predictions are typically about two recorded-yield units away, with larger errors receiving extra weight."),
+        ("Regression", "A fitted equation used to describe or predict an outcome from several inputs. It can show an adjusted relationship, but it does not automatically establish causation."),
+        ("Model importance", "A way to see which inputs helped a predictive model make accurate predictions. It is not proof that changing that input will change yield."),
+    ]
+    for term, explanation in terms:
+        with st.expander(term): st.write(explanation)
+    st.subheader("Open the evidence records")
+    links = {
+        "Analysis Register": "https://github.com/bainneor-prog/GenAI-Project/blob/main/results/analysis_register.csv",
+        "Evidence Index": "https://github.com/bainneor-prog/GenAI-Project/blob/main/results/PHASE9_EVIDENCE_REFERENCE_INDEX.csv",
+        "Approved reporting register": "https://github.com/bainneor-prog/GenAI-Project/blob/main/results/PHASE9_REPORTING_ELIGIBILITY.csv",
+        "Findings JSON": "https://github.com/bainneor-prog/GenAI-Project/blob/main/results/findings.json",
+    }
+    st.markdown(" · ".join(f"[{label}]({url})" for label, url in links.items()))
+    st.caption("These links open the version-controlled evidence records. Accepted findings remain qualified and are not claims of real-world agricultural validity.")
+elif page == "Overview":
     st.markdown('<div class="hero"><h1>Crop Yield Insights</h1><p>Results from the analysed dataset — clear comparisons, relationships and predictive performance.</p></div>', unsafe_allow_html=True)
     summary = data.groupby("Crop_Type")["Crop_Yield_ton_per_hectare"].agg(count="size", mean="mean").reset_index().sort_values("mean", ascending=False)
     m = pd.read_csv(ROOT / "results/model_metrics.csv")
