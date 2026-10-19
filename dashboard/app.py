@@ -53,14 +53,15 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 @st.cache_data
-def get_data():
+def get_data(cache_version: str):
+    """Load dashboard records; cache_version invalidates stale deployed data."""
     manifest, findings, decisions, refs = load_evidence()
     register = pd.read_csv(ROOT / "results/analysis_register.csv")
     human_register = pd.read_csv(ROOT / "results/PHASE9_HUMAN_VERIFICATION_REGISTER.csv")
     return manifest, findings, decisions, refs, register, human_register, load_source_dataset()
 
 try:
-    manifest, findings, decisions, refs, register, human_register, data = get_data()
+    manifest, findings, decisions, refs, register, human_register, data = get_data("validated-source-v2")
 except DatasetValidationError as exc:
     st.error(
         "The dashboard cannot safely load the approved dataset. Data-dependent charts and "
